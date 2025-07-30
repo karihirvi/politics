@@ -9,22 +9,50 @@ To iteratively produce textual social media content that resonates with Finnish 
 
 ## Post Writing Process
 
-1. **User writes the start of the text in a file.** At the end of the text, the user asks for ideas 
-   on how to continue and/or describes the idea of the post. Claude should consider the idea 
-   description as constraints within which to generate how the text should continue.
-   - If constraints are not specific enough, Claude should ask for clarification.
-   - If constraints are specific enough but allow multiple interpretations, Claude should provide 
-     multiple options for how to continue the text.
-   - Instructions may refer to background information, such as party programs, framing techniques, 
-     or examples from previous posts.
+### File Structure and Naming Convention
 
-2. **Once Claude has figured out what to generate,** it writes the continuation of the text to a new 
-   file with a running version number in the filename, e.g., 01-..., 02-..., etc. Two numbers are 
-   enough.
+1. **Workspace Organization**
+   - All work happens in the `workspace` folder
+   - Each post topic gets its own subfolder named: `W-XXX-topic-name`
+     - W = Workspace
+     - XXX = Three-digit number (001, 002, etc.)
+     - topic-name = User-chosen descriptive name
 
-3. **All work happens in the workspace folder.** Iterating each text is done in subfolders named 
-   with the post idea. The user decides the subfolder name. Subfolder names start with a number 
-   001-, 002-, etc. to keep the order. Use three digits.
+2. **A-B File Pairing System**
+   - Each iteration consists of an A-B file pair:
+     - **A files**: Written by user, containing instructions/prompts
+     - **B files**: Written by Claude, containing the response/generated text
+   - File naming pattern: `W-XXX-YY-[A/B]-description.md`
+     - XXX = Workspace number (matches folder)
+     - YY = Two-digit iteration number (01, 02, etc.)
+     - A/B = File type (A for user, B for Claude)
+     - description = Brief descriptor of content
+
+3. **Iteration Process**
+   - User creates `W-001-01-A-instructions.md` with initial text and instructions
+   - Claude creates `W-001-01-B-response.md` with generated content
+   - User creates `W-001-02-A-refinement.md` referencing the previous B file
+   - Claude creates `W-001-02-B-refined.md` with updated content
+   - Process continues until desired result is achieved
+
+VERY IMPORTANT: When processing A files, follow this exact pattern:
+   - When you process a W-XXX-YY-A file, you must create a corresponding W-XXX-YY-B file (same iteration number)
+   - Example: If processing `W-001-02-A-instructions.md`, create `W-001-02-B-response.md`
+   - NEVER modify existing files in the workspace folder
+   - NEVER increment the iteration number yourself - that's the user's job
+   - The A-B pairing means: A file (user) → B file (Claude) with the SAME iteration number
+
+### Content Generation Guidelines
+
+1. **When User Provides Instructions**
+   - If constraints are unclear, ask for clarification
+   - If multiple valid interpretations exist, provide multiple options
+   - Reference background materials when instructed (party programs, framing techniques, style examples)
+
+2. **Response Format**
+   - For multiple options: Create all variations in a single B file, clearly separated
+   - Use descriptive headers for each version
+   - Keep Finnish text separate from English instructions/comments
 
 ## Background Information
 
