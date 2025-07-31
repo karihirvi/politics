@@ -65,6 +65,27 @@ For writing text, you can use background information and other resources:
   for easy reference, e.g., E-001-..., E-002-..., etc. The prefix "E-" stands for "example" for Claude to recognize 
   them easily. Posts from workspace folders may be lifted to this folder if they are considered particularly effective.
 
+## Style Guides
+
+Two comprehensive style guides are available for creating effective political content:
+- **CLAUDE_STYLE_FI.md** - Finnish language style guide with 7 distinct writing styles
+- **CLAUDE_STYLE_EN.md** - English language style guide with the same 7 styles
+
+### How to Use Style Guides
+1. User describes their goal (e.g., "mobilize supporters", "introduce new concept")
+2. Claude analyzes the goal and recommends 1-2 appropriate styles
+3. Content is created following the selected style's characteristics
+4. Example files (E-XXX) serve as concrete references for each style
+
+### The 7 Political Communication Styles
+1. **Paasaustyyli/Oratory** - Emotional, commanding, mobilizing
+2. **Analyyttinen/Analytical** - Strategic, educational, legitimizing
+3. **Konseptuaalinen/Conceptual** - Introduces new ideas and frameworks
+4. **Argumentoiva/Argumentative** - Logical, refutes opposition
+5. **Kriittis-poliittinen/Critical-Political** - Criticizes opponents, scandals
+6. **Filosofis-uskonnollinen/Philosophical-Religious** - Values, meaning, tradition
+7. **Populistinen/Populist** - Simple solutions, economic appeals
+
 ## Language Guidelines
 - The language of the posts is **Finnish**, so you must write the posts in Finnish
 - If you need help with Finnish, ask the user
