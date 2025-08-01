@@ -27,15 +27,15 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Toimii parhaiten lyhyessä muodossa (2-4 kappaletta)
 
 ### Esimerkit
-- E-005-sisu.txt
-- E-006-ole-mies.txt
-- E-007-nuori-suomalainen.txt
-- E-008-sukupuolia-on-kaksi.txt
-- E-009-jumala-loi-taivaan-ja-maan.txt
-- E-010-valheiden-virta.txt
-- E-011-halpa-energia.txt
-- E-012-rikkautta-ja-voimaa.txt
-- E-013-laki-ja-jarjestys.txt
+- e005-sisu.txt
+- e006-ole-mies.txt
+- e007-nuori-suomalainen.txt
+- e008-sukupuolia-on-kaksi.txt
+- e009-jumala-loi-taivaan-ja-maan.txt
+- e010-valheiden-virta.txt
+- e011-halpa-energia.txt
+- e012-rikkautta-ja-voimaa.txt
+- e013-laki-ja-jarjestys.txt
 
 ## 2. Analyyttinen tyyli
 
@@ -60,8 +60,8 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Toimii hyvin pidemmän aikavälin vaikuttamisessa
 
 ### Esimerkit
-- E-001-vaestonvaihto-termi.txt
-- E-017-presidentinvaalkampanja-stubb.txt
+- e001-vaestonvaihto-termi.txt
+- e017-presidentinvaalkampanja-stubb.txt
 
 ## 3. Konseptuaalinen tyyli
 
@@ -85,8 +85,8 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Toimii parhaiten kun on selkeä, muistettava iskulause
 
 ### Esimerkit
-- E-003-yksi-kulttuuri-monta-varia.txt
-- E-004-ruotsissa-murhattu-13v-poika.txt
+- e003-yksi-kulttuuri-monta-varia.txt
+- e004-ruotsissa-murhattu-13v-poika.txt
 
 ## 4. Argumentoiva tyyli
 
@@ -110,8 +110,8 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Hyvä puolustusstrategia hyökkäyksiä vastaan
 
 ### Esimerkit
-- E-002-pukeutumispakko-burkaan.txt
-- E-015-siirtolaisvyory-eurooppaan.txt
+- e002-pukeutumispakko-burkaan.txt
+- e015-siirtolaisvyory-eurooppaan.txt
 
 ## 5. Kriittis-poliittinen tyyli
 
@@ -135,8 +135,8 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Riski: voi vaikuttaa negatiiviselta
 
 ### Esimerkit
-- E-010-valheiden-virta.txt (myös paasaustyylissä)
-- E-016-diana-ja-sanna-marin.txt
+- e010-valheiden-virta.txt (myös paasaustyylissä)
+- e016-diana-ja-sanna-marin.txt
 
 ## 6. Filosofis-uskonnollinen tyyli
 
@@ -160,8 +160,8 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Toimii hyvin tiettyinä aikoina (pyhät, kriisit)
 
 ### Esimerkit
-- E-009-jumala-loi-taivaan-ja-maan.txt (myös paasaustyylissä)
-- E-014-uskonnon-ja-omantunnon-vapaus.txt
+- e009-jumala-loi-taivaan-ja-maan.txt (myös paasaustyylissä)
+- e014-uskonnon-ja-omantunnon-vapaus.txt
 
 ## 7. Populistinen tyyli
 
@@ -185,7 +185,7 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - Toimii hyvin taloudellisissa kriiseissä
 
 ### Esimerkit
-- E-011-halpa-energia.txt (myös paasaustyylissä)
+- e011-halpa-energia.txt (myös paasaustyylissä)
 
 ## Käyttöohjeet
 

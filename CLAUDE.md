@@ -7,40 +7,105 @@ insights from various experts in political communication, psychology, and cultur
 ## Main Goal
 To iteratively produce textual social media content that resonates with Finnish voters.
 
-## Post Writing Process
+## Content Creation Process
 
-### File Structure and Naming Convention
+The system supports two types of content creation:
 
-1. **Workspace Organization**
-   - All work happens in the `workspace` folder
-   - Each post topic gets its own subfolder named: `W-XXX-topic-name`
-     - W = Workspace
-     - XXX = Three-digit number (001, 002, etc.)
-     - topic-name = User-chosen descriptive name
+### 1. Single Posts (Quick, One-off Content)
 
-2. **A-B File Pairing System**
-   - Each iteration consists of an A-B file pair:
-     - **A files**: Written by user, containing instructions/prompts
-     - **B files**: Written by Claude, containing the response/generated text
-   - File naming pattern: `W-XXX-YY-[A/B]-description.md`
-     - XXX = Workspace number (matches folder)
-     - YY = Two-digit iteration number (01, 02, etc.)
-     - A/B = File type (A for user, B for Claude)
-     - description = Brief descriptor of content
+For quick responses to current events or single ideas that don't need a full campaign:
 
-3. **Iteration Process**
-   - User creates `W-001-01-A-instructions.md` with initial text and instructions
-   - Claude creates `W-001-01-B-response.md` with generated content
-   - User creates `W-001-02-A-refinement.md` referencing the previous B file
-   - Claude creates `W-001-02-B-refined.md` with updated content
-   - Process continues until desired result is achieved
+**Organization:**
+- All single posts are created in the `posts` folder
+- Each post topic gets its own folder: `p###-topic-name`
+  - p = post
+  - ### = Three-digit number (001, 002, etc.)
+  - topic-name = User-chosen descriptive name (lowercase, hyphens)
 
-VERY IMPORTANT: When processing A files, follow this exact pattern:
-   - When you process a W-XXX-YY-A file, you must create a corresponding W-XXX-YY-B file (same iteration number)
-   - Example: If processing `W-001-02-A-instructions.md`, create `W-001-02-B-response.md`
-   - NEVER modify existing files in the workspace folder
-   - NEVER increment the iteration number yourself - that's the user's job
-   - The A-B pairing means: A file (user) → B file (Claude) with the SAME iteration number
+**File Structure:**
+- Follows the A-B iteration pattern:
+  - **A files**: User instructions (e.g., `p001-01-a-instructions.md`)
+  - **B files**: Claude's response (e.g., `p001-01-b-response.md`)
+- Continue with 02-a, 02-b for refinements
+
+**Example Structure:**
+```
+posts/
+├── p001-burkakielto-jatko/
+│   ├── p001-01-a-ohjeet.md
+│   ├── p001-01-b-burkakielto-paastaustyyli.md
+│   ├── p001-02-a-ohjeet.md
+│   └── p001-02-b-muokattu-versio.md
+```
+
+### 2. Campaigns (Goal-Driven Multi-Stage Content)
+
+For comprehensive messaging campaigns using the 5-stage psychological journey model from CLAUDE_GOAL_*.md:
+
+**5-Stage Structure:**
+1. **AWAKEN** - Create awareness (1-2 posts)
+2. **AGITATE** - Generate emotional investment (3-5 posts)
+3. **EDUCATE** - Provide framework (2-4 posts)
+4. **ACTIVATE** - Channel into action (1-2 posts)
+5. **INTEGRATE** - Embed into identity (ongoing)
+
+**Organization:**
+- All campaigns are created in the `campaigns` folder
+- Each campaign gets its own folder: `c###-topic-name`
+  - c = campaign
+  - ### = Three-digit number (001, 002, etc.)
+  - topic-name = User-chosen descriptive name (lowercase, hyphens)
+
+**Iteration System:**
+- User creates initial request: `01a-request.md`
+- Claude generates full campaign in subfolder: `01b-iter/`
+  - `1-awaken.md` - All AWAKEN stage posts
+  - `2-agitate.md` - All AGITATE stage posts
+  - `3-educate.md` - All EDUCATE stage posts
+  - `4-activate.md` - All ACTIVATE stage posts
+  - `5-integrate.md` - All INTEGRATE stage posts
+- Claude auto-generates refinement template: `02a-refine.md`
+- User adds feedback to refinement file
+- Claude creates refined campaign in: `02b-iter/`
+- Process continues with 03a, 03b, etc.
+
+**Post Tracking:**
+- After final iteration, Claude generates `posted.txt`
+- Template includes all posts with placeholders for URLs
+- User adds actual social media URLs after posting
+
+**Example Structure:**
+```
+campaigns/
+├── c001-wind-power/
+│   ├── 00-plan.md (optional campaign strategy)
+│   ├── 01a-request.md
+│   ├── 01b-iter/
+│   │   ├── 1-awaken.md
+│   │   ├── 2-agitate.md
+│   │   ├── 3-educate.md
+│   │   ├── 4-activate.md
+│   │   └── 5-integrate.md
+│   ├── 02a-refine.md (auto-generated)
+│   ├── 02b-iter/
+│   │   └── ... (refined versions)
+│   └── posted.txt (auto-generated after final iteration)
+```
+
+### Naming Convention Summary
+
+**All lowercase throughout:**
+- Posts: `p###-topic-name/`
+- Campaigns: `c###-topic-name/`
+- User files: end with `a` (e.g., `01a-request.md`, `p001-01-a-ohjeet.md`)
+- Claude files: end with `b` (e.g., `01b-iter/`, `p001-01-b-response.md`)
+- Topics: lowercase with hyphens (e.g., `stop-wind-power`, `burkakielto-jatko`)
+
+VERY IMPORTANT:
+- Choose single posts for quick, reactive content
+- Choose campaigns for strategic, goal-driven messaging
+- Always maintain consistent lowercase naming
+- Never modify existing files - create new iterations
 
 ### Content Generation Guidelines
 
@@ -57,25 +122,34 @@ VERY IMPORTANT: When processing A files, follow this exact pattern:
 ## Background Information
 
 For writing text, you can use background information and other resources:
-- **party_programs** - contains official programs for various political parties
+- **party-programs** - contains official programs for various political parties
 - **framing** - contains information about framing techniques
 - **resources** - contains examples and other materials
-- **style_examples** - contains selected examples of earlier posts, which you can use as inspiration or reference.
+- **style-examples** - contains selected examples of earlier posts, which you can use as inspiration or reference.
   The examples are selected due to their estimated effectiveness in Finnish political communication. They are numbered 
-  for easy reference, e.g., E-001-..., E-002-..., etc. The prefix "E-" stands for "example" for Claude to recognize 
-  them easily. Posts from workspace folders may be lifted to this folder if they are considered particularly effective.
+  for easy reference, e.g., e001-..., e002-..., etc. The prefix "e" stands for "example" for Claude to recognize 
+  them easily. Posts from posts/ or campaigns/ folders may be lifted to this folder if they are considered particularly effective.
 
-## Style Guides
+## Style and Goal Guides
 
+### Style Guides
 Two comprehensive style guides are available for creating effective political content:
 - **CLAUDE_STYLE_FI.md** - Finnish language style guide with 7 distinct writing styles
 - **CLAUDE_STYLE_EN.md** - English language style guide with the same 7 styles
 
-### How to Use Style Guides
-1. User describes their goal (e.g., "mobilize supporters", "introduce new concept")
-2. Claude analyzes the goal and recommends 1-2 appropriate styles
-3. Content is created following the selected style's characteristics
-4. Example files (E-XXX) serve as concrete references for each style
+### Goal-Based Strategy Guides
+Two strategic guides for campaign planning:
+- **CLAUDE_GOAL_FI.md** - Finnish guide for goal-driven campaign strategy
+- **CLAUDE_GOAL_EN.md** - English guide for goal-driven campaign strategy
+
+These guides explain the 5-stage psychological journey and how to map styles to campaign goals.
+
+### How to Use the Guides
+1. User describes their campaign goal
+2. Claude identifies the goal type and recommends a strategic sequence
+3. Claude maps appropriate styles to each stage (AWAKEN, AGITATE, etc.)
+4. Content is created following both style characteristics and stage psychology
+5. Example files (e###) serve as concrete references
 
 ### The 7 Political Communication Styles
 1. **Paasaustyyli/Oratory** - Emotional, commanding, mobilizing
@@ -86,6 +160,18 @@ Two comprehensive style guides are available for creating effective political co
 6. **Filosofis-uskonnollinen/Philosophical-Religious** - Values, meaning, tradition
 7. **Populistinen/Populist** - Simple solutions, economic appeals
 
+### Common Campaign Goal Types
+- **Launch** - New movement or initiative
+- **Policy** - Specific policy support
+- **Oppose** - Build opposition movement
+- **Crisis** - Manage crisis/maintain base
+- **Convert** - Win new demographics
+- **Defend** - Counter attacks
+- **Mobilize** - Immediate action
+- **Agenda** - Set public discourse
+- **Values** - Reinforce identity
+- **Recruit** - Grow membership
+
 ## Language Guidelines
 - The language of the posts is **Finnish**, so you must write the posts in Finnish
 - If you need help with Finnish, ask the user
@@ -94,7 +180,7 @@ Two comprehensive style guides are available for creating effective political co
 ## Key Reminders
 - Follow the iterative process carefully
 - Use version numbering consistently
-- Keep the workspace folder organized
+- Keep the posts and campaigns folders organized
 - Leverage background materials effectively
 - Ensure messages resonate with the Finnish audience
 

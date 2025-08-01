@@ -27,15 +27,15 @@ This document contains seven political communication styles for effective messag
 - Works best in short form (2-4 paragraphs)
 
 ### Examples
-- E-005-sisu.txt
-- E-006-ole-mies.txt
-- E-007-nuori-suomalainen.txt
-- E-008-sukupuolia-on-kaksi.txt
-- E-009-jumala-loi-taivaan-ja-maan.txt
-- E-010-valheiden-virta.txt
-- E-011-halpa-energia.txt
-- E-012-rikkautta-ja-voimaa.txt
-- E-013-laki-ja-jarjestys.txt
+- e005-sisu.txt
+- e006-ole-mies.txt
+- e007-nuori-suomalainen.txt
+- e008-sukupuolia-on-kaksi.txt
+- e009-jumala-loi-taivaan-ja-maan.txt
+- e010-valheiden-virta.txt
+- e011-halpa-energia.txt
+- e012-rikkautta-ja-voimaa.txt
+- e013-laki-ja-jarjestys.txt
 
 ## 2. Analytical Style
 
@@ -60,8 +60,8 @@ This document contains seven political communication styles for effective messag
 - Works well for long-term influence
 
 ### Examples
-- E-001-vaestonvaihto-termi.txt
-- E-017-presidentinvaalkampanja-stubb.txt
+- e001-vaestonvaihto-termi.txt
+- e017-presidentinvaalkampanja-stubb.txt
 
 ## 3. Conceptual Style
 
@@ -85,8 +85,8 @@ This document contains seven political communication styles for effective messag
 - Works best with clear, memorable slogan
 
 ### Examples
-- E-003-yksi-kulttuuri-monta-varia.txt
-- E-004-ruotsissa-murhattu-13v-poika.txt
+- e003-yksi-kulttuuri-monta-varia.txt
+- e004-ruotsissa-murhattu-13v-poika.txt
 
 ## 4. Argumentative Style
 
@@ -110,8 +110,8 @@ This document contains seven political communication styles for effective messag
 - Good defensive strategy against attacks
 
 ### Examples
-- E-002-pukeutumispakko-burkaan.txt
-- E-015-siirtolaisvyory-eurooppaan.txt
+- e002-pukeutumispakko-burkaan.txt
+- e015-siirtolaisvyory-eurooppaan.txt
 
 ## 5. Critical-Political Style
 
@@ -135,8 +135,8 @@ This document contains seven political communication styles for effective messag
 - Risk: can appear negative
 
 ### Examples
-- E-010-valheiden-virta.txt (also in oratory style)
-- E-016-diana-ja-sanna-marin.txt
+- e010-valheiden-virta.txt (also in oratory style)
+- e016-diana-ja-sanna-marin.txt
 
 ## 6. Philosophical-Religious Style
 
@@ -160,8 +160,8 @@ This document contains seven political communication styles for effective messag
 - Works well at specific times (holidays, crises)
 
 ### Examples
-- E-009-jumala-loi-taivaan-ja-maan.txt (also in oratory style)
-- E-014-uskonnon-ja-omantunnon-vapaus.txt
+- e009-jumala-loi-taivaan-ja-maan.txt (also in oratory style)
+- e014-uskonnon-ja-omantunnon-vapaus.txt
 
 ## 7. Populist Style
 
@@ -185,7 +185,7 @@ This document contains seven political communication styles for effective messag
 - Works well in economic crises
 
 ### Examples
-- E-011-halpa-energia.txt (also in oratory style)
+- e011-halpa-energia.txt (also in oratory style)
 
 ## Usage Instructions
 
