@@ -144,6 +144,26 @@ Two strategic guides for campaign planning:
 
 These guides explain the 5-stage psychological journey and how to map styles to campaign goals.
 
+### Fine-Grained Constraint Documents
+Three levels of detailed constraints for optimizing content generation:
+
+#### Syntactic Constraints
+- **CLAUDE_SYNTAX_FI.md** - Grammatical constraints per style (sentence types, lengths, structures)
+- **CLAUDE_SYNTAX_EN.md** - English version of syntactic constraints
+
+#### Rhetorical Constraints
+- **CLAUDE_RHETORIC_FI.md** - Argumentation structures and rhetorical devices per style
+- **CLAUDE_RHETORIC_EN.md** - English version of rhetorical constraints
+
+#### Lexical Constraints
+- **CLAUDE_LEXICON_FI.md** - Vocabulary, registers, and phraseology per style
+- **CLAUDE_LEXICON_EN.md** - English version of lexical constraints
+
+### Post Writing Guides
+Detailed instructions for individual post creation:
+- **CLAUDE_POST_FI.md** - Finnish guide for writing individual posts
+- **CLAUDE_POST_EN.md** - English guide for writing individual posts
+
 ### How to Use the Guides
 1. User describes their campaign goal
 2. Claude identifies the goal type and recommends a strategic sequence
@@ -176,6 +196,8 @@ These guides explain the 5-stage psychological journey and how to map styles to 
 - The language of the posts is **Finnish**, so you must write the posts in Finnish
 - If you need help with Finnish, ask the user
 - English is used for prompts and other instructions
+- NEVER use hashtags in posts
+- For post length guidance, refer to style-examples for typical lengths
 
 ## Key Reminders
 - Follow the iterative process carefully
