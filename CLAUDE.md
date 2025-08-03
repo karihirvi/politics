@@ -9,14 +9,10 @@ To iteratively produce textual social media content that resonates with Finnish 
 
 ## Content Creation Process
 
-The system supports two types of content creation:
-
-### 1. Single Posts (Quick, One-off Content)
-
-For quick responses to current events or single ideas that don't need a full campaign:
+The system creates effective single posts for social media:
 
 **Organization:**
-- All single posts are created in the `posts` folder
+- All posts are created in the `posts` folder
 - Each post topic gets its own folder: `p###-topic-name`
   - p = post
   - ### = Three-digit number (001, 002, etc.)
@@ -38,86 +34,102 @@ posts/
 │   └── p001-02-b-muokattu-versio.md
 ```
 
-### 2. Campaigns (Goal-Driven Multi-Stage Content)
-
-For comprehensive messaging campaigns using the 5-stage psychological journey model from CLAUDE_GOAL_*.md:
-
-**5-Stage Structure:**
-1. **AWAKEN** - Create awareness (1-2 posts)
-2. **AGITATE** - Generate emotional investment (3-5 posts)
-3. **EDUCATE** - Provide framework (2-4 posts)
-4. **ACTIVATE** - Channel into action (1-2 posts)
-5. **INTEGRATE** - Embed into identity (ongoing)
-
-**Organization:**
-- All campaigns are created in the `campaigns` folder
-- Each campaign gets its own folder: `c###-topic-name`
-  - c = campaign
-  - ### = Three-digit number (001, 002, etc.)
-  - topic-name = User-chosen descriptive name (lowercase, hyphens)
-
-**Iteration System:**
-- User creates initial request: `01a-request.md`
-- Claude generates full campaign in subfolder: `01b-iter/`
-  - `1-awaken.md` - All AWAKEN stage posts
-  - `2-agitate.md` - All AGITATE stage posts
-  - `3-educate.md` - All EDUCATE stage posts
-  - `4-activate.md` - All ACTIVATE stage posts
-  - `5-integrate.md` - All INTEGRATE stage posts
-- Claude auto-generates refinement template: `02a-refine.md`
-- User adds feedback to refinement file
-- Claude creates refined campaign in: `02b-iter/`
-- Process continues with 03a, 03b, etc.
-
-**Post Tracking:**
-- After final iteration, Claude generates `posted.txt`
-- Template includes all posts with placeholders for URLs
-- User adds actual social media URLs after posting
-
-**Example Structure:**
-```
-campaigns/
-├── c001-wind-power/
-│   ├── 00-plan.md (optional campaign strategy)
-│   ├── 01a-request.md
-│   ├── 01b-iter/
-│   │   ├── 1-awaken.md
-│   │   ├── 2-agitate.md
-│   │   ├── 3-educate.md
-│   │   ├── 4-activate.md
-│   │   └── 5-integrate.md
-│   ├── 02a-refine.md (auto-generated)
-│   ├── 02b-iter/
-│   │   └── ... (refined versions)
-│   └── posted.txt (auto-generated after final iteration)
-```
-
-### Naming Convention Summary
+### Naming Convention
 
 **All lowercase throughout:**
-- Posts: `p###-topic-name/`
-- Campaigns: `c###-topic-name/`
-- User files: end with `a` (e.g., `01a-request.md`, `p001-01-a-ohjeet.md`)
-- Claude files: end with `b` (e.g., `01b-iter/`, `p001-01-b-response.md`)
-- Topics: lowercase with hyphens (e.g., `stop-wind-power`, `burkakielto-jatko`)
+- Post folders: `p###-topic-name/`
+- Files inside: `p###-##-a-description.md` and `p###-##-b-description.md`
+  - `p###` = Post number (e.g., p001, p002)
+  - `##` = Iteration number (01, 02, 03...)
+  - `a` = User-created content (requests, feedback)
+  - `b` = Claude-generated content (responses)
+  - `description` = Brief description of content
+- Topics: lowercase with hyphens (e.g., `burkakielto-jatko`)
 
 VERY IMPORTANT:
-- Choose single posts for quick, reactive content
-- Choose campaigns for strategic, goal-driven messaging
 - Always maintain consistent lowercase naming
 - Never modify existing files - create new iterations
+- **Current Version Rule**: The latest generated file (highest number) is the active version
+  - E.g., if both p001-01-b and p001-02-b exist, use p001-02-b
+  - User will explicitly mention any exceptions to this rule
 
 ### Content Generation Guidelines
 
-1. **When User Provides Instructions**
+1. **When Creating a New Post**
+   - Automatically create the first request template: `p###-01-a-request.md`
+   - Use the standard template with sections for Goal, Style, Length, Key Points, etc.
+   - This saves the user time and ensures consistent structure
+
+2. **When User Says "käsittele"**
+   - Process the request file to generate response
+   - **IMPORTANT**: Automatically create the next feedback template after generating response
+   - This ensures smooth iteration workflow
+
+3. **When User Provides Other Instructions**
    - If constraints are unclear, ask for clarification
    - If multiple valid interpretations exist, provide multiple options
    - Reference background materials when instructed (party programs, framing techniques, style examples)
 
-2. **Response Format**
+4. **Response Format**
    - For multiple options: Create all variations in a single B file, clearly separated
    - Use descriptive headers for each version
    - Keep Finnish text separate from English instructions/comments
+
+5. **Feedback Processing**
+   - **CRITICAL**: When user provides feedback on any part, apply it globally
+   - If user corrects a spelling (e.g., "burkkaa" → "burkaa"), fix it everywhere
+   - If user suggests a tone change in one post, consider if it applies to others
+   - If user mentions missing context, add context to ALL posts, not just the commented one
+   - Always think: "Does this feedback apply elsewhere?"
+
+### Workflow Example
+
+**Step 1: User creates request file**
+```
+posts/p002-tuulivoimakritiikin/p002-01-a-request.md:
+
+# Request: Wind Power Criticism Post
+
+Goal: Expose the hidden costs of wind power subsidies
+Style: Analyyttinen (Analytical) - I want to build credibility with facts
+Length: MEDIUM (5-6 paragraphs)
+Key points:
+- Taxpayer burden
+- Unreliability of wind power
+- Impact on electricity prices
+
+Please include credible sources (remember: no Wikipedia)
+```
+
+**Step 2: Claude generates response**
+```
+posts/p002-tuulivoimakritiikin/p002-01-b-tuulivoiman-todelliset-kustannukset.md:
+
+# Tuulivoiman todelliset kustannukset paljastuvat
+
+[Analytical style post with 5-6 paragraphs, facts, sources...]
+
+Lähteet:
+1. Energiavirasto (2023): https://energiavirasto.fi/...
+2. VTT:n tutkimus (2024): https://www.vtt.fi/...
+```
+
+**Step 3: User provides feedback**
+```
+posts/p002-tuulivoimakritiikin/p002-02-a-feedback.md:
+
+Good start, but:
+- Add more emotional hook in opening
+- Include comparison to nuclear power costs
+- Tone is too academic, make it more accessible
+```
+
+**Step 4: Claude creates refined version**
+```
+posts/p002-tuulivoimakritiikin/p002-02-b-tuulivoiman-piilotetut-kulut.md:
+
+[Refined version incorporating all feedback]
+```
 
 ## Background Information
 
@@ -137,12 +149,12 @@ Two comprehensive style guides are available for creating effective political co
 - **CLAUDE_STYLE_FI.md** - Finnish language style guide with 7 distinct writing styles
 - **CLAUDE_STYLE_EN.md** - English language style guide with the same 7 styles
 
-### Goal-Based Strategy Guides
-Two strategic guides for campaign planning:
-- **CLAUDE_GOAL_FI.md** - Finnish guide for goal-driven campaign strategy
-- **CLAUDE_GOAL_EN.md** - English guide for goal-driven campaign strategy
+### Style Selection Guides
+Two guides for choosing the right style for your posts:
+- **CLAUDE_GOAL_FI.md** - Finnish guide for style selection
+- **CLAUDE_GOAL_EN.md** - English guide for style selection
 
-These guides explain the 5-stage psychological journey and how to map styles to campaign goals.
+These guides help you choose the most effective style for your communication goal.
 
 ### Fine-Grained Constraint Documents
 Three levels of detailed constraints for optimizing content generation:
@@ -165,11 +177,10 @@ Detailed instructions for individual post creation:
 - **CLAUDE_POST_EN.md** - English guide for writing individual posts
 
 ### How to Use the Guides
-1. User describes their campaign goal
-2. Claude identifies the goal type and recommends a strategic sequence
-3. Claude maps appropriate styles to each stage (AWAKEN, AGITATE, etc.)
-4. Content is created following both style characteristics and stage psychology
-5. Example files (e###) serve as concrete references
+1. User describes their communication goal
+2. Claude identifies the most appropriate style(s)
+3. Content is created following style characteristics
+4. Example files (e###) serve as concrete references
 
 ### The 7 Political Communication Styles
 1. **Paasaustyyli/Oratory** - Emotional, commanding, mobilizing
@@ -180,17 +191,6 @@ Detailed instructions for individual post creation:
 6. **Filosofis-uskonnollinen/Philosophical-Religious** - Values, meaning, tradition
 7. **Populistinen/Populist** - Simple solutions, economic appeals
 
-### Common Campaign Goal Types
-- **Launch** - New movement or initiative
-- **Policy** - Specific policy support
-- **Oppose** - Build opposition movement
-- **Crisis** - Manage crisis/maintain base
-- **Convert** - Win new demographics
-- **Defend** - Counter attacks
-- **Mobilize** - Immediate action
-- **Agenda** - Set public discourse
-- **Values** - Reinforce identity
-- **Recruit** - Grow membership
 
 ## Language Guidelines
 - The language of the posts is **Finnish**, so you must write the posts in Finnish
@@ -199,12 +199,45 @@ Detailed instructions for individual post creation:
 - NEVER use hashtags in posts
 - For post length guidance, refer to style-examples for typical lengths
 
+## Source and Reference Guidelines
+- **ALL references must be URLs**: Never use vague citations like "Study shows" or "Report says"
+- **Language requirement**: Sources must be in Finnish or English only
+- **Credibility requirement**: 
+  - Never use Wikipedia as a source
+  - Only use generally credible sources like:
+    - Government websites (.gov, .fi ministries)
+    - Established news organizations (YLE, HS, BBC, Reuters)
+    - Academic institutions and research institutes
+    - Official NGO and international organization websites
+    - Peer-reviewed journals and official reports
+- **Format**: EACH POST must have its own source list
+  - Place all references at the END of EACH individual post
+  - Use brackets [1] or parentheses (1) in text to mark citations
+  - Never use superscript or subscript numbers
+  - List full URLs at the bottom under "Lähteet:" or "Viitteet:"
+  - Never share source lists between posts - each post is self-contained
+- **IMPORTANT**: When generating content with URLs, use WebFetch to verify links work
+  - If URL doesn't work, find alternative sources
+  - Never include broken or fictional URLs
+- **Example format**:
+  ```
+  Ranskan sisäministeriön mukaan [1] burkakielto on vähentänyt turvallisuusongelmia.
+  
+  Lähteet:
+  1. Ranskan sisäministeriön raportti (2019): https://www.interieur.gouv.fr/...
+  ```
+
 ## Key Reminders
 - Follow the iterative process carefully
 - Use version numbering consistently
-- Keep the posts and campaigns folders organized
+- Keep the posts folder organized
 - Leverage background materials effectively
 - Ensure messages resonate with the Finnish audience
 
 ## Technical details
-Max line length: 120 characters
+- Max line length: 120 characters
+- **Markdown formatting**: Always use proper markdown syntax
+  - Lists must use `-` or `*` at the beginning of each item
+  - Bold text with `**text**`
+  - Headers with appropriate `#` levels
+  - Proper line breaks between sections

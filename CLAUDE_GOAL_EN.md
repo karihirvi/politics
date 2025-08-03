@@ -1,8 +1,8 @@
-# CLAUDE_GOAL_EN.md - Strategic Goal-Based Communication Guide
+# CLAUDE_GOAL_EN.md - Style Selection Guide
 
 ## Overview
 
-This document provides Claude with a systematic approach to creating effective political communication campaigns based on strategic goals. It maps communication styles to psychological stages for maximum impact.
+This document helps select the right communication style for political posts. Each style has its own psychological impact and effectiveness in different situations.
 
 **Important**: All style names in this document refer to the 7 political communication styles defined in detail in CLAUDE_STYLE_EN.md and CLAUDE_STYLE_FI.md.
 
@@ -15,96 +15,51 @@ This document provides Claude with a systematic approach to creating effective p
 - **Philosophical-Religious** = Filosofis-uskonnollinen/Philosophical-Religious Style
 - **Populist** = Populistinen/Populist Style
 
-## The 5-Stage Communication Journey
+## Style Selection by Goal
 
-### 1. AWAKEN - Create Awareness
-**Purpose**: Break through ignorance or apathy
-**Psychological need**: Attention
-**Post frequency**: 1-2 posts
-**Primary styles**: Critical-Political, Conceptual
-**Content focus**: Shocking revelations, paradigm shifts, exposing hidden problems
+### When you want to grab attention or expose a problem
+**Recommended styles**: Critical-Political, Conceptual
+- **Critical-Political**: Expose scandals, failures, or opponent weaknesses
+- **Conceptual**: Introduce new perspective or reframe issue
 
-### 2. AGITATE - Generate Emotional Investment
-**Purpose**: Transform awareness into emotional concern
-**Psychological need**: Emotional activation
-**Post frequency**: 3-5 posts
-**Primary styles**: Oratory, Populist, Critical-Political
-**Content focus**: Building urgency, creating stakes, us-vs-them dynamics
+### When you want to mobilize action
+**Recommended styles**: Oratory, Populist
+- **Oratory**: Awaken national pride, create "our team" spirit
+- **Populist**: Offer simple solutions, appeal to economic concerns
 
-### 3. EDUCATE - Provide Framework
-**Purpose**: Give tools to understand the issue
-**Psychological need**: Cognitive clarity
-**Post frequency**: 2-4 posts
-**Primary styles**: Analytical, Argumentative, Conceptual
-**Content focus**: Systematic explanation, addressing objections, building competence
+### When you want to teach or convince
+**Recommended styles**: Analytical, Argumentative
+- **Analytical**: Explain complex issues, build authority
+- **Argumentative**: Refute claims, present logical arguments
 
-### 4. ACTIVATE - Channel Into Action
-**Purpose**: Convert energy into specific behaviors
-**Psychological need**: Agency/efficacy
-**Post frequency**: 1-2 posts
-**Primary styles**: Oratory, Populist
-**Content focus**: Clear commands, simple actions, removing barriers
+### When you want to reinforce values or identity
+**Recommended styles**: Philosophical-Religious, Oratory
+- **Philosophical-Religious**: Appeal to tradition, values, and meaning
+- **Oratory**: Strengthen community and national identity
 
-### 5. INTEGRATE - Embed Into Identity
-**Purpose**: Make position part of self-concept
-**Psychological need**: Belonging/meaning
-**Post frequency**: Ongoing/periodic
-**Primary styles**: Philosophical-Religious, Oratory, Analytical
-**Content focus**: Values, meaning, community celebration
+## Psychological Principles
 
-## Strategic Sequences by Goal Type
+### Attention Capture
+- Use surprising facts or perspectives
+- Challenge prevailing assumptions
+- Reveal hidden truths
 
-### Goal: Launch New Political Movement
-**Sequence**: Conceptual → Analytical → Argumentative → Oratory
-1. AWAKEN with new concept/vision
-2. AGITATE around current system failures
-3. EDUCATE on alternative framework
-4. ACTIVATE specific joining actions
-5. INTEGRATE through shared values
+### Emotional Activation
+- Create sense of urgency
+- Highlight threats or opportunities
+- Use personal stories
 
-### Goal: Win Support for Controversial Policy
-**Sequence**: Analytical → Conceptual → Argumentative → Populist → Oratory
-1. AWAKEN to hidden benefits/necessity
-2. AGITATE about costs of status quo
-3. EDUCATE with reframed understanding
-4. ACTIVATE simple support actions
-5. INTEGRATE as moral imperative
+### Cognitive Clarity
+- Provide clear framework
+- Use concrete examples
+- Build argument step by step
 
-### Goal: Build Opposition Movement
-**Sequence**: Critical-Political → Populist → Argumentative → Oratory
-1. AWAKEN through scandal/failure exposure
-2. AGITATE with economic/cultural threats
-3. EDUCATE on systematic problems
-4. ACTIVATE protest/voting actions
-5. INTEGRATE as resistance identity
+### Action Motivation
+- Give clear instructions
+- Remove barriers
+- Make action easy
 
-### Goal: Manage Crisis/Maintain Base
-**Sequence**: Philosophical-Religious → Oratory → Populist
-1. AWAKEN to deeper meaning of crisis
-2. AGITATE around external threats
-3. EDUCATE on our strength/response
-4. ACTIVATE unity actions
-5. INTEGRATE renewed commitment
-
-## Implementation Guidelines
-
-### Timing Patterns
-
-**Rapid Campaign** (1 week)
-- Day 1: AWAKEN
-- Days 2-4: AGITATE (multiple daily)
-- Days 5-6: EDUCATE
-- Day 7: ACTIVATE
-- Ongoing: INTEGRATE
-
-**Extended Campaign** (6 weeks)
-- Week 1: AWAKEN
-- Weeks 2-3: AGITATE
-- Weeks 4-5: EDUCATE
-- Week 6: ACTIVATE
-- Monthly: INTEGRATE
-
-### Message Repetition Psychology
+## Message Repetition Psychology
 
 **Core Principle: Theme Repetition, Not Post Repetition**
 
@@ -113,180 +68,74 @@ Research shows people need 7-12 exposures to a message before behavior change. O
 - Each post should present the SAME THEME through DIFFERENT CONTENT
 - Never repost identical content (algorithms punish this)
 
-**Repetition Requirements by Stage**
+## Style Effectiveness
 
-**AWAKEN** (1-2 unique posts)
-- Goal: Break through with novelty
-- One powerful post often sufficient
-- If needed, one follow-up from different angle
+### High Engagement (likes, shares)
+1. **Oratory** - Extremely high like and share rates
+2. **Populist** - Resonates on economic issues
+3. **Critical-Political** - Spreads during scandals
 
-**AGITATE** (3-5 unique posts)
-- Goal: Build emotional investment
-- Same core emotion, different triggers
-- Example: Immigration concern through crime stats → victim story → job loss → cultural change → personal threat
+### Deep Impact (opinion change)
+1. **Analytical** - Creates authority, convinces intellectuals
+2. **Conceptual** - Leaves lasting impression, changes thinking
+3. **Argumentative** - Effectively refutes opponent claims
 
-**EDUCATE** (2-4 unique posts)
-- Goal: Layer understanding
-- Each post adds new dimension
-- Build complexity gradually
+### Identity Reinforcement
+1. **Philosophical-Religious** - Deepens value foundation
+2. **Oratory** - Strengthens group identity
 
-**ACTIVATE** (2-3 unique posts)
-- Goal: Overcome action barriers
-- Initial CTA → Reminder → Final push
-- Each with slightly different framing
+## Reference Requirements
 
-**INTEGRATE** (Ongoing, 1-2 monthly)
-- Goal: Reinforce identity
-- Celebrate wins, share values
-- Always fresh content
+**ALL references must be in URL format:**
+- Never use vague citations like "Study shows" or "Report says"
+- Sources must be in Finnish or English
+- **Credibility requirement**:
+  - Never use Wikipedia as a source
+  - Only use generally credible sources:
+    - Government websites (ministries, agencies)
+    - Established news media (YLE, HS, BBC, Reuters)
+    - Academic institutions and research institutes
+    - Official NGOs and international organizations
+    - Peer-reviewed publications and official reports
+- **Format**: EACH POST must have its own source list
+  - Place references at the END of EACH individual post
+  - Use brackets [1] or parentheses (1) in text to mark citations
+  - Never use superscript or subscript numbers
+  - List URLs under "Sources:" or "References:"
+  - Never share source lists between posts
+- **IMPORTANT**: Verify URL functionality with WebFetch tool
+  - If link doesn't work, find alternative sources
+  - Never include broken or fictional URLs
+- **Example format**:
+  ```
+  According to the French Interior Ministry [1], the burqa ban has reduced security issues.
+  
+  Sources:
+  1. French Interior Ministry report (2019): https://www.interieur.gouv.fr/...
+  ```
 
-### Multi-Post Strategies
+## Practical Guidelines for Claude
 
-**AGITATE Stage** (Example: Immigration)
-1. Statistical shock post
-2. Personal victim story
-3. Economic impact analysis
-4. Cultural threat warning
-5. "This affects you" message
+### Style Selection
+1. Analyze user's goal
+2. Select 1-2 most suitable styles from above guidelines
+3. Read detailed description of chosen style from CLAUDE_STYLE_EN.md
+4. Follow style characteristics precisely
 
-Note: Each post is unique content reinforcing the same emotional message.
+### Post Length
+- **SHORT**: 2-4 paragraphs
+- **MEDIUM**: 5-6 paragraphs
+- **LONG**: 7-9 paragraphs
 
-**EDUCATE Stage** (Example: Energy Policy)
-1. Problem explanation
-2. Solution framework
-3. Myth debunking
-4. Success examples
+### Iteration Principles
+- When user provides feedback, apply it throughout the text
+- If user corrects spelling, fix it everywhere
+- If user suggests tone change, consider applying it to entire text
 
-### Spacing Guidelines
+## Version Management
 
-- Minimum 1 day between posts on same theme
-- Maximum 3-4 days to maintain momentum
-- AWAKEN can be standalone
-- AGITATE benefits from 2-3 day rhythm
-- EDUCATE works with 2-4 day spacing
-- ACTIVATE should be concentrated (daily during action period)
+**Latest version is current**: 
+- If there are 01-b and 02-b files, use 02-b
+- User will explicitly mention any exceptions to this rule
 
-### Style Selection Matrix
-
-**Note**: Style names below are shortened. See "Style Name Reference" section above for full names.
-
-```
-Stage     | Never Use        | Sometimes Use    | Primary Use
-----------|------------------|------------------|------------------
-AWAKEN    | Oratory         | Populist         | Critical, Conceptual
-AGITATE   | Analytical      | Philosophical    | Oratory, Populist, Critical
-EDUCATE   | Oratory         | Critical         | Analytical, Argumentative, Conceptual
-ACTIVATE  | Analytical      | Argumentative    | Oratory, Populist
-INTEGRATE | Critical        | Conceptual       | Philosophical, Oratory, Analytical
-```
-
-## Key Principles
-
-1. **Diagnose Starting Point**: Where is your audience psychologically?
-   - Unaware → Start at AWAKEN
-   - Aware but passive → Start at AGITATE
-   - Emotional but confused → Start at EDUCATE
-   - Informed but inactive → Start at ACTIVATE
-   - Active but uncommitted → Start at INTEGRATE
-
-2. **Match Style to Psychology**: Each stage requires different emotional/cognitive approach
-
-3. **Build Momentum**: Early stages create energy, later stages channel it
-
-4. **Measure and Adapt**: Track engagement at each stage, adjust sequence as needed
-
-5. **Cultural Context**: Adapt examples and references to Finnish context
-
-## Usage Instructions for Claude
-
-When user requests a campaign:
-1. Identify the main goal (G)
-2. Assess target audience starting point
-3. Select appropriate sequence from templates
-4. Map specific styles to each stage (refer to CLAUDE_STYLE_*.md for full style descriptions)
-5. Create campaign folder in campaigns/ directory (c###-topic-name)
-6. Generate ALL stages at once in first iteration:
-   - 01b-iter/1-awaken.md (1-2 posts)
-   - 01b-iter/2-agitate.md (3-5 posts)
-   - 01b-iter/3-educate.md (2-4 posts)
-   - 01b-iter/4-activate.md (1-2 posts)
-   - 01b-iter/5-integrate.md (1-2 posts)
-7. Auto-generate 02a-refine.md template for user feedback
-8. After final iteration, generate posted.txt for URL tracking
-
-## Campaign Folder Structure
-
-### Folder Naming Convention
-
-Campaign folders use the pattern `c###-topic-name` where:
-- **c** = "campaign" (generic prefix for all goal-driven message sequences)
-- **###** = three-digit sequential number (001, 002, etc.)
-- **topic-name** = descriptive name using lowercase and hyphens
-
-**Why 'c' prefix?**
-- Generic enough to cover all goal types (not just electoral campaigns)
-- Distinguishes from old single-post system (which used W-XXX)
-- Ensures alphabetical grouping of all campaigns
-- Short and easy to type
-- A "campaign" here means any coordinated sequence of messages pursuing a specific goal
-
-Examples:
-- `c001-stop-wind-power` (Goal: Build Opposition Movement)
-- `c002-crisis-response` (Goal: Manage Crisis)
-- `c003-launch-movement` (Goal: Launch New Political Movement)
-- `c004-recruit-youth` (Goal: Convert/Recruit Demographics)
-
-```
-campaigns/
-├── c001-topic-name/
-│   ├── 00-plan.md (optional strategy overview)
-│   ├── 01a-request.md (user's initial request)
-│   ├── 01b-iter/
-│   │   ├── 1-awaken.md
-│   │   ├── 2-agitate.md
-│   │   ├── 3-educate.md
-│   │   ├── 4-activate.md
-│   │   └── 5-integrate.md
-│   ├── 02a-refine.md (auto-generated feedback template)
-│   ├── 02b-iter/ (refined versions)
-│   └── posted.txt (auto-generated after final iteration)
-```
-
-## Refinement Template Format
-
-After generating 01b-iter/, create 02a-refine.md:
-
-```markdown
-# Refinement Instructions for Iteration 02
-
-## AWAKEN Stage Feedback
-### Post 1: [First few words...]
-<!-- User comments here -->
-
-## AGITATE Stage Feedback
-### Post 1: [First few words...]
-<!-- User comments here -->
-### Post 2: [First few words...]
-<!-- User comments here -->
-[etc...]
-
-## General Campaign Feedback
-<!-- User comments here -->
-```
-
-## Posted URL Tracking Template
-
-After final iteration, generate posted.txt:
-
-```
-# Campaign: [Campaign Name]
-# Final iteration: [##b-iter/]
-# Generated: [Date]
-
-AWK1: [AWAITING URL]
-AGI1: [AWAITING URL]
-AGI2: [AWAITING URL]
-[etc...]
-```
-
-Remember: This is a psychological journey design tool. Success depends on matching the right style to the right psychological moment in the audience's journey.
+Remember: Effective political communication requires choosing the right style for the right situation. One post can change the direction of discourse when written in the right style at the right time.

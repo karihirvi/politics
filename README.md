@@ -71,7 +71,6 @@ This repository provides a multi-layered constraint system that enables AI tools
 ## Repository Structure
 
 ```
-├── campaigns/          # Multi-stage strategic campaigns
 ├── posts/             # Single tactical messages  
 ├── party-programs/    # Source material and positions
 ├── framing/           # Communication techniques
@@ -105,6 +104,26 @@ This system transforms political communication from intuitive art to systematic 
 - Enabling systematic optimization
 - Creating reproducible results
 - Allowing continuous improvement through iteration
+
+## System Limitations
+
+### Campaign Creation Challenges
+
+While this system excels at creating individual posts with specific styles, Claude has demonstrated limitations in creating full multi-stage campaigns:
+
+- **Source Integrity**: When creating campaigns, Claude may misrepresent sources, citing research that actually argues against the campaign's position
+- **Consistency**: Maintaining a coherent political position across multiple posts and stages proves challenging
+- **Psychological Coherence**: The 5-stage journey model (AWAKEN → AGITATE → EDUCATE → ACTIVATE → INTEGRATE) requires nuanced psychological progression that exceeds current capabilities
+
+### Recommended Approach
+
+For best results:
+- Focus on creating powerful single posts using the 7 communication styles
+- Use the style selection guides (CLAUDE_GOAL_*.md) to choose the most effective approach
+- Leverage the constraint system for individual messages rather than complex campaigns
+- Consider human-led campaign planning with AI-assisted individual post creation
+
+The system remains highly effective for its core purpose: engineering individual pieces of political communication with unprecedented precision and impact.
 
 ## Language
 
