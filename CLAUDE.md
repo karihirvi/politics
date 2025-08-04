@@ -1,32 +1,32 @@
 # CLAUDE.md
 
-The purpose of this repo is to provide a comprehensive system for creating effective political 
-communication in the Finnish context, particularly for the Perussuomalaiset (PS) party. It includes 
-insights from various experts in political communication, psychology, and cultural studies.
+Tämän repositorion tarkoitus on tarjota kattava järjestelmä tehokkaaseen poliittiseen 
+viestintään Suomen kontekstissa, erityisesti Perussuomalaisten (PS) puolueelle. Se sisältää 
+näkemyksiä eri poliittisen viestinnän, psykologian ja kulttuuritutkimuksen asiantuntijoilta.
 
-## Main Goal
-To iteratively produce textual social media content that resonates with Finnish voters.
+## Päätavoite
+Tuottaa iteratiivisesti tekstuaalista sosiaalisen median sisältöä, joka resonoi suomalaisten äänestäjien kanssa.
 
-## Content Creation Process
+## Sisällöntuotantoprosessi
 
-The system creates effective single posts for social media:
+Järjestelmä luo tehokkaita yksittäisiä postauksia sosiaaliseen mediaan:
 
-**Organization:**
-- All posts are created in the `posts` folder
-- Each post topic gets its own folder: `p###-topic-name`
-  - p = post
-  - ### = Three-digit number (001, 002, etc.)
-  - topic-name = User-chosen descriptive name (lowercase, hyphens)
+**Organisointi:**
+- Kaikki postaukset luodaan `postaukset`-kansioon
+- Jokainen postausaihe saa oman kansion: `p###-aiheen-nimi`
+  - p = postaus
+  - ### = Kolminumeroinen numero (001, 002, jne.)
+  - aiheen-nimi = Käyttäjän valitsema kuvaava nimi (pienet kirjaimet, väliviivat)
 
-**File Structure:**
-- Follows the A-B iteration pattern:
-  - **A files**: User instructions (e.g., `p001-01-a-instructions.md`)
-  - **B files**: Claude's response (e.g., `p001-01-b-response.md`)
-- Continue with 02-a, 02-b for refinements
+**Tiedostorakenne:**
+- Seuraa A-B iteraatiokuviota:
+  - **A-tiedostot**: Käyttäjän ohjeet (esim. `p001-01-a-ohjeet.md`)
+  - **B-tiedostot**: Clauden vastaus (esim. `p001-01-b-vastaus.md`)
+- Jatka 02-a, 02-b hienosäätöjä varten
 
-**Example Structure:**
+**Esimerkkigerakenne:**
 ```
-posts/
+postaukset/
 ├── p001-burkakielto-jatko/
 │   ├── p001-01-a-ohjeet.md
 │   ├── p001-01-b-burkakielto-paastaustyyli.md
@@ -34,192 +34,186 @@ posts/
 │   └── p001-02-b-muokattu-versio.md
 ```
 
-### Naming Convention
+### Nimeämiskäytäntö
 
-**All lowercase throughout:**
-- Post folders: `p###-topic-name/`
-- Files inside: `p###-##-a-description.md` and `p###-##-b-description.md`
-  - `p###` = Post number (e.g., p001, p002)
-  - `##` = Iteration number (01, 02, 03...)
-  - `a` = User-created content (requests, feedback)
-  - `b` = Claude-generated content (responses)
-  - `description` = Brief description of content
-- Topics: lowercase with hyphens (e.g., `burkakielto-jatko`)
+**Kaikki pienillä kirjaimilla läpi:**
+- Postauskansiot: `p###-aiheen-nimi/`
+- Sisällä olevat tiedostot: `p###-##-a-kuvaus.md` ja `p###-##-b-kuvaus.md`
+  - `p###` = Postauksen numero (esim. p001, p002)
+  - `##` = Iteraationumero (01, 02, 03...)
+  - `a` = Käyttäjän luoma sisältö (pyynnöt, palaute)
+  - `b` = Clauden generoima sisältö (vastaukset)
+  - `kuvaus` = Lyhyt kuvaus sisällöstä
+- Aiheet: pienet kirjaimet väliviivoilla (esim. `burkakielto-jatko`)
 
-VERY IMPORTANT:
-- Always maintain consistent lowercase naming
-- Never modify existing files - create new iterations
-- **Current Version Rule**: The latest generated file (highest number) is the active version
-  - E.g., if both p001-01-b and p001-02-b exist, use p001-02-b
-  - User will explicitly mention any exceptions to this rule
+ERITTÄIN TÄRKEÄÄ:
+- Säilytä aina johdonmukainen pienten kirjaimien käyttö
+- Älä koskaan muokkaa olemassa olevia tiedostoja - luo uusia iteraatioita
+- **Nykyinen versioseäntö**: Viimeisin generoitu tiedosto (korkein numero) on aktiivinen versio
+  - Esim. jos sekä p001-01-b että p001-02-b ovat olemassa, käytä p001-02-b
+  - Käyttäjä mainitsee erikseen mahdolliset poikkeukset tähän sääntöön
 
-### Content Generation Guidelines
+### Sisällöntuotannon ohjeistus
 
-1. **When Creating a New Post**
-   - Automatically create the first request template: `p###-01-a-request.md`
-   - Use the standard template with sections for Goal, Style, Length, Key Points, etc.
-   - This saves the user time and ensures consistent structure
+1. **Uutta postausta luotaessa**
+   - Luo automaattisesti ensimmäinen pyyntömalli: `p###-01-a-pyyntö.md`
+   - Käytä vakiomallia osioilla Tavoite, Tyyli, Pituus, Keskeiset kohdat, jne.
+   - Tämä säästää käyttäjän aikaa ja varmistaa yhtenäisen rakenteen
 
-2. **When User Says "käsittele"**
-   - Process the request file to generate response
-   - **IMPORTANT**: Automatically create the next feedback template after generating response
-   - This ensures smooth iteration workflow
+2. **Kun käyttäjä sanoo "käsittele"**
+   - Käsittele pyyntötiedosto generoidaksesi vastauksen
+   - **TÄRKEÄÄ**: Luo automaattisesti seuraava palautemalli vastauksen generoinnin jälkeen
+   - Tämä varmistaa sujuvan iteraatiotyökulun
 
-3. **When User Provides Other Instructions**
-   - If constraints are unclear, ask for clarification
-   - If multiple valid interpretations exist, provide multiple options
-   - Reference background materials when instructed (party programs, framing techniques, style examples)
+3. **Kun käyttäjä antaa muita ohjeita**
+   - Jos rajoitteet ovat epäselviä, pyydä tarkennusta
+   - Jos on useita päteviä tulkintoja, tarjoa useita vaihtoehtoja
+   - Viittaa taustamateriaaleihin ohjeiden mukaan (puolueohjelmat, kehystystekniikat, tyylesimerkit)
 
-4. **Response Format**
-   - For multiple options: Create all variations in a single B file, clearly separated
-   - Use descriptive headers for each version
-   - Keep Finnish text separate from English instructions/comments
+4. **Vastausmuoto**
+   - Useille vaihtoehdoille: Luo kaikki variaatiot yhteen B-tiedostoon, selvästi eroteltuina
+   - Käytä kuvaavia otsikoita jokaiselle versiolle
+   - Pidä suomenkielinen teksti erillään ohjeista/kommenteista
 
-5. **Feedback Processing**
-   - **CRITICAL**: When user provides feedback on any part, apply it globally
-   - If user corrects a spelling (e.g., "burkkaa" → "burkaa"), fix it everywhere
-   - If user suggests a tone change in one post, consider if it applies to others
-   - If user mentions missing context, add context to ALL posts, not just the commented one
-   - Always think: "Does this feedback apply elsewhere?"
+5. **Palautteen käsittely**
+   - **KRIITTINEN**: Kun käyttäjä antaa palautetta mistä tahansa osasta, sovella sitä globaalisti
+   - Jos käyttäjä korjaa kirjoitusasun (esim. "burkkaa" → "burkaa"), korjaa se kaikkialla
+   - Jos käyttäjä ehdottaa sävyn muutosta yhdessä postauksessa, harkitse koskeeko se muita
+   - Jos käyttäjä mainitsee puuttuvan kontekstin, lisää konteksti KAIKKIIN postauksiin, ei vain kommentoituun
+   - Ajattele aina: "Koskeeko tämä palaute muualle?"
 
-### Workflow Example
+### Työnkulkuesimerkki
 
-**Step 1: User creates request file**
+**Vaihe 1: Käyttäjä luo pyyntötiedoston**
 ```
-posts/p002-tuulivoimakritiikin/p002-01-a-request.md:
+postaukset/p002-tuulivoimakritiikki/p002-01-a-pyyntö.md:
 
-# Request: Wind Power Criticism Post
+# Pyyntö: Tuulivoimakritiikin postaus
 
-Goal: Expose the hidden costs of wind power subsidies
-Style: Analyyttinen (Analytical) - I want to build credibility with facts
-Length: MEDIUM (5-6 paragraphs)
-Key points:
-- Taxpayer burden
-- Unreliability of wind power
-- Impact on electricity prices
+Tavoite: Paljastaa tuulivoimatukien piilotetut kustannukset
+Tyyli: Analyyttinen - haluan rakentaa uskottavuutta faktoilla
+Pituus: KESKIPITKÄ (5-6 kappaletta)
+Keskeiset kohdat:
+- Veronmaksajien taakka
+- Tuulivoiman epäluotettavuus
+- Vaikutus sähkön hintaan
 
-Please include credible sources (remember: no Wikipedia)
+Sisällytä uskottavia lähteitä (muista: ei Wikipediaa)
 ```
 
-**Step 2: Claude generates response**
+**Vaihe 2: Claude generoi vastauksen**
 ```
-posts/p002-tuulivoimakritiikin/p002-01-b-tuulivoiman-todelliset-kustannukset.md:
+postaukset/p002-tuulivoimakritiikki/p002-01-b-tuulivoiman-todelliset-kustannukset.md:
 
 # Tuulivoiman todelliset kustannukset paljastuvat
 
-[Analytical style post with 5-6 paragraphs, facts, sources...]
+[Analyyttisen tyylin postaus 5-6 kappaleella, faktoja, lähteitä...]
 
 Lähteet:
 1. Energiavirasto (2023): https://energiavirasto.fi/...
 2. VTT:n tutkimus (2024): https://www.vtt.fi/...
 ```
 
-**Step 3: User provides feedback**
+**Vaihe 3: Käyttäjä antaa palautetta**
 ```
-posts/p002-tuulivoimakritiikin/p002-02-a-feedback.md:
+postaukset/p002-tuulivoimakritiikki/p002-02-a-palaute.md:
 
-Good start, but:
-- Add more emotional hook in opening
-- Include comparison to nuclear power costs
-- Tone is too academic, make it more accessible
-```
-
-**Step 4: Claude creates refined version**
-```
-posts/p002-tuulivoimakritiikin/p002-02-b-tuulivoiman-piilotetut-kulut.md:
-
-[Refined version incorporating all feedback]
+Hyvä alku, mutta:
+- Lisää emotionaalinen koukku alkuun
+- Sisällytä vertailu ydinvoiman kustannuksiin
+- Sävy on liian akateeminen, tee siitä helpommin lähestyttävä
 ```
 
-## Background Information
+**Vaihe 4: Claude luo hienosäädetyn version**
+```
+postaukset/p002-tuulivoimakritiikki/p002-02-b-tuulivoiman-piilotetut-kulut.md:
 
-For writing text, you can use background information and other resources:
-- **party-programs** - contains official programs for various political parties
-- **framing** - contains information about framing techniques
-- **resources** - contains examples and other materials
-- **style-examples** - contains selected examples of earlier posts, which you can use as inspiration or reference.
-  The examples are selected due to their estimated effectiveness in Finnish political communication. They are numbered 
-  for easy reference, e.g., e001-..., e002-..., etc. The prefix "e" stands for "example" for Claude to recognize 
-  them easily. Posts from posts/ or campaigns/ folders may be lifted to this folder if they are considered particularly effective.
+[Hienosäädetty versio, joka sisältää kaiken palautteen]
+```
 
-## Style and Goal Guides
+## Taustatiedot
 
-### Style Guides
-Two comprehensive style guides are available for creating effective political content:
-- **CLAUDE_STYLE_FI.md** - Finnish language style guide with 7 distinct writing styles
-- **CLAUDE_STYLE_EN.md** - English language style guide with the same 7 styles
+Tekstin kirjoittamiseen voit käyttää taustatietoja ja muita resursseja:
+- **puolueohjelmat** - sisältää eri poliittisten puolueiden viralliset ohjelmat
+- **kehystys** - sisältää tietoa kehystystekniikoista
+- **resurssit** - sisältää esimerkkejä ja muita materiaaleja
+- **tyyliesimerkit** - sisältää valikoituja esimerkkejä aiemmista postauksista, joita voit käyttää inspiraationa tai viitteenä.
+  Esimerkit on valittu niiden arvioidun tehokkuuden perusteella suomalaisessa poliittisessa viestinnässä. Ne on numeroitu 
+  helppoa viittausta varten, esim. e001-..., e002-... jne. Etuliite "e" tarkoittaa "esimerkki" (example), jotta Claude 
+  tunnistaa ne helposti. Postauksia postaukset/- tai campaigns/-kansioista voidaan nostaa tähän kansioon, jos niitä pidetään erityisen tehokkaina.
 
-### Style Selection Guides
-Two guides for choosing the right style for your posts:
-- **CLAUDE_GOAL_FI.md** - Finnish guide for style selection
-- **CLAUDE_GOAL_EN.md** - English guide for style selection
+## Tyyli- ja tavoiteoppaat
 
-These guides help you choose the most effective style for your communication goal.
+### Tyyliopas
+Kattava tyyliopas tehokkaaseen poliittiseen sisällöntuotantoon:
+- **CLAUDE_TYYLI.md** - Suomenkielinen tyyliopas 7 erilaisella kirjoitustyylillä
 
-### Fine-Grained Constraint Documents
-Three levels of detailed constraints for optimizing content generation:
+### Tyylinvalintaopas
+Opas oikean tyylin valintaan postauksillesi:
+- **CLAUDE_TAVOITE.md** - Suomenkielinen opas tyylin valintaan
 
-#### Syntactic Constraints
-- **CLAUDE_SYNTAX_FI.md** - Grammatical constraints per style (sentence types, lengths, structures)
-- **CLAUDE_SYNTAX_EN.md** - English version of syntactic constraints
+Tämä opas auttaa valitsemaan tehokkaimman tyylin viestintätavoitteellesi.
 
-#### Rhetorical Constraints
-- **CLAUDE_RHETORIC_FI.md** - Argumentation structures and rhetorical devices per style
-- **CLAUDE_RHETORIC_EN.md** - English version of rhetorical constraints
+### Hienojakoiset rajoiteasiakirjat
+Kolme yksityiskohtaisten rajoitteiden tasoa sisällöntuotannon optimointiin:
 
-#### Lexical Constraints
-- **CLAUDE_LEXICON_FI.md** - Vocabulary, registers, and phraseology per style
-- **CLAUDE_LEXICON_EN.md** - English version of lexical constraints
+#### Syntaktiset rajoitteet
+- **CLAUDE_SYNTAKSI.md** - Kieliopilliset rajoitteet tyyleittäin (lausetyypit, pituudet, rakenteet)
 
-### Post Writing Guides
-Detailed instructions for individual post creation:
-- **CLAUDE_POST_FI.md** - Finnish guide for writing individual posts
-- **CLAUDE_POST_EN.md** - English guide for writing individual posts
+#### Retoriset rajoitteet
+- **CLAUDE_RETORIIKKA.md** - Argumentaatiorakenteet ja retoriset keinot tyyleittäin
 
-### How to Use the Guides
-1. User describes their communication goal
-2. Claude identifies the most appropriate style(s)
-3. Content is created following style characteristics
-4. Example files (e###) serve as concrete references
+#### Leksikaaliset rajoitteet
+- **CLAUDE_SANASTO.md** - Sanasto, rekisterit ja fraseologia tyyleittäin
 
-### The 7 Political Communication Styles
-1. **Paasaustyyli/Oratory** - Emotional, commanding, mobilizing
-2. **Analyyttinen/Analytical** - Strategic, educational, legitimizing
-3. **Konseptuaalinen/Conceptual** - Introduces new ideas and frameworks
-4. **Argumentoiva/Argumentative** - Logical, refutes opposition
-5. **Kriittis-poliittinen/Critical-Political** - Criticizes opponents, scandals
-6. **Filosofis-uskonnollinen/Philosophical-Religious** - Values, meaning, tradition
-7. **Populistinen/Populist** - Simple solutions, economic appeals
+### Postausten kirjoitusopas
+Yksityiskohtaiset ohjeet yksittäisten postausten luomiseen:
+- **CLAUDE_POSTAUS.md** - Suomenkielinen opas yksittäisten postausten kirjoittamiseen
+
+### Oppaiden käyttö
+1. Käyttäjä kuvaa viestintätavoitteensa
+2. Claude tunnistaa sopivimman tyylin/tyylit
+3. Sisältö luodaan tyyliominaisuuksia noudattaen
+4. Esimerkkitiedostot (e###) toimivat konkreettisina viitteinä
+
+### 7 poliittisen viestinnän tyyliä
+1. **Paasaustyyli** - Tunteellinen, käskevä, mobilisoiva
+2. **Analyyttinen** - Strateginen, kouluttava, legitimoiva
+3. **Konseptuaalinen** - Esittelee uusia ideoita ja viitekehyksiä
+4. **Argumentoiva** - Looginen, kumoaa vastapuolen väitteitä
+5. **Kriittis-poliittinen** - Kritisoi vastustajia, skandaalit
+6. **Filosofis-uskonnollinen** - Arvot, merkitys, perinteet
+7. **Populistinen** - Yksinkertaiset ratkaisut, taloudelliset vetoomukset
 
 
-## Language Guidelines
-- The language of the posts is **Finnish**, so you must write the posts in Finnish
-- If you need help with Finnish, ask the user
-- English is used for prompts and other instructions
-- NEVER use hashtags in posts
-- For post length guidance, refer to style-examples for typical lengths
+## Kieliohjeistus
+- Postausten kieli on **suomi**, joten sinun tulee kirjoittaa postaukset suomeksi
+- Jos tarvitset apua suomen kanssa, kysy käyttäjältä
+- Englantia käytetään käyttäjän ohjeisiin ja muihin ohjeistuksiin tarvittaessa
+- ÄLÄ KOSKAAN käytä hashtageja postauksissa
+- Postausten pituusohjeistukseen viittaa tyyliesimerkit tyypillisille pituuksille
 
-## Source and Reference Guidelines
-- **ALL references must be URLs**: Never use vague citations like "Study shows" or "Report says"
-- **Language requirement**: Sources must be in Finnish or English only
-- **Credibility requirement**: 
-  - Never use Wikipedia as a source
-  - Only use generally credible sources like:
-    - Government websites (.gov, .fi ministries)
-    - Established news organizations (YLE, HS, BBC, Reuters)
-    - Academic institutions and research institutes
-    - Official NGO and international organization websites
-    - Peer-reviewed journals and official reports
-- **Format**: EACH POST must have its own source list
-  - Place all references at the END of EACH individual post
-  - Use brackets [1] or parentheses (1) in text to mark citations
-  - Never use superscript or subscript numbers
-  - List full URLs at the bottom under "Lähteet:" or "Viitteet:"
-  - Never share source lists between posts - each post is self-contained
-- **IMPORTANT**: When generating content with URLs, use WebFetch to verify links work
-  - If URL doesn't work, find alternative sources
-  - Never include broken or fictional URLs
-- **Example format**:
+## Lähde- ja viittausohjeistus
+- **KAIKKI viittaukset tulee olla URL-osoitteita**: Älä koskaan käytä epämääräisiä viittauksia kuten "Tutkimus osoittaa" tai "Raportti sanoo"
+- **Kielivaatimus**: Lähteiden tulee olla vain suomeksi tai englanniksi
+- **Uskottavuusvaatimus**: 
+  - Älä koskaan käytä Wikipediaa lähteenä
+  - Käytä vain yleisesti uskottavia lähteitä kuten:
+    - Hallituksen verkkosivut (.gov, .fi ministeriöt)
+    - Vakiintuneet uutisorganisaatiot (YLE, HS, BBC, Reuters)
+    - Akateemiset laitokset ja tutkimuslaitokset
+    - Viralliset kansalaisjärjestöjen ja kansainvälisten järjestöjen verkkosivut
+    - Vertaisarvioidut julkaisut ja viralliset raportit
+- **Muoto**: JOKAISELLA POSTAUKSELLA tulee olla oma lähdeluettelo
+  - Sijoita kaikki viitteet JOKAISEN yksittäisen postauksen LOPPUUN
+  - Käytä hakasulkeita [1] tai sulkeita (1) tekstissä viittausten merkitsemiseen
+  - Älä koskaan käytä ylä- tai alaindeksinumeroita
+  - Listaa täydet URL-osoitteet alhaalla kohdassa "Lähteet:" tai "Viitteet:"
+  - Älä koskaan jaa lähdeluetteloita postausten välillä - jokainen postaus on itsenäinen
+- **TÄRKEÄÄ**: Generoidessasi sisältöä URL-osoitteilla, käytä WebFetch-työkalua varmistaaksesi linkkien toimivuuden
+  - Jos URL ei toimi, etsi vaihtoehtoisia lähteitä
+  - Älä koskaan sisällytä rikkinäisiä tai kuvitteellisia URL-osoitteita
+- **Esimerkkimuoto**:
   ```
   Ranskan sisäministeriön mukaan [1] burkakielto on vähentänyt turvallisuusongelmia.
   
@@ -227,17 +221,18 @@ Detailed instructions for individual post creation:
   1. Ranskan sisäministeriön raportti (2019): https://www.interieur.gouv.fr/...
   ```
 
-## Key Reminders
-- Follow the iterative process carefully
-- Use version numbering consistently
-- Keep the posts folder organized
-- Leverage background materials effectively
-- Ensure messages resonate with the Finnish audience
+## Keskeiset muistutukset
+- Noudata iteratiivista prosessia huolellisesti
+- Käytä versionumerointia johdonmukaisesti
+- Pidä postaukset-kansio järjestyksessä
+- Hyödynnä taustamateriaaleja tehokkaasti
+- Varmista, että viestit resonoivat suomalaisen yleisön kanssa
 
-## Technical details
-- Max line length: 120 characters
-- **Markdown formatting**: Always use proper markdown syntax
-  - Lists must use `-` or `*` at the beginning of each item
-  - Bold text with `**text**`
-  - Headers with appropriate `#` levels
-  - Proper line breaks between sections
+## Tekniset yksityiskohdat
+- Maksimi rivin pituus: 120 merkkiä
+- **Markdown-muotoilu**: Käytä aina oikeaa markdown-syntaksia
+  - Listojen tulee käyttää `-` tai `*` jokaisen kohdan alussa
+  - Lihavoitu teksti `**teksti**`
+  - Otsikot sopivilla `#`-tasoilla
+  - Asianmukaiset rivinvaihdot osioiden välillä
+- **Git commit -viestit**: Aina englanniksi

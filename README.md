@@ -1,136 +1,136 @@
-# Political Communication Engineering System
+# Poliittisen viestinnän suunnittelujärjestelmä
 
-A systematic approach to engineering effective political communication in the Finnish context.
+Systemaattinen lähestymistapa tehokkaaseen poliittiseen viestintään Suomen kontekstissa.
 
-## The Philosophy of Communication Engineering
+## Viestintäsuunnittelun filosofia
 
-Traditional political communication has been treated as an art form—relying on intuition, charisma, and trial-and-error. This repository represents a paradigm shift: treating political communication as an engineering discipline where messages can be systematically designed, optimized, and refined based on measurable constraints and proven patterns.
+Perinteistä poliittista viestintää on käsitelty taidemuotona—luottaen intuitioon, karismaan ja yrityksen ja erehdyksen menetelmään. Tämä repositorio edustaa paradigman muutosta: poliittisen viestinnän käsittelyä suunnittelutieteenä, jossa viestit voidaan systemaattisesti suunnitella, optimoida ja hioa mitattavien rajoitteiden ja todistettujen mallien perusteella.
 
-At its core, communication engineering is an optimization problem: humans define goals, machines use optimization to create messages that, when read by humans, produce maximal effect in advancing toward those goals. While humans are far more than reactive machines, for the purpose of persuasion modeling, we can approximate audience responses as another language model—one that responds statistically to certain linguistic and emotional patterns. This doesn't mean deterministic responses, but rather probabilistic tendencies that can be measured and optimized.
+Viestintäsuunnittelun ytimessä on optimointiongelma: ihmiset määrittelevät tavoitteet, koneet käyttävät optimointia luodakseen viestejä, jotka ihmisten lukemina tuottavat maksimaalisen vaikutuksen tavoitteiden edistämisessä. Vaikka ihmiset ovat paljon enemmän kuin reaktiivisia koneita, suostuttelun mallintamisen tarkoituksessa voimme approksimoida yleisön reaktioita toisena kielimallina—sellaisena, joka reagoi tilastollisesti tiettyihin kielellisiin ja emotionaalisiin malleihin. Tämä ei tarkoita deterministisiä reaktioita, vaan pikemminkin todennäköisyyksiä, joita voidaan mitata ja optimoida.
 
-Just as software engineering transformed programming from craft to discipline, communication engineering transforms political messaging from guesswork to science. By decomposing the complex challenge of persuasion into manageable layers of abstraction, we can optimize each component independently while ensuring they work together harmoniously.
+Aivan kuten ohjelmistosuunnittelu muutti ohjelmoinnin käsityöstä tieteenalaksi, viestintäsuunnittelu muuttaa poliittisen viestinnän arvailusta tieteeksi. Hajottamalla monimutkaisen suostutteluhaasteen hallittaviksi abstraktiotasoiksi voimme optimoida jokaista komponenttia itsenäisesti varmistaen samalla niiden harmonisen yhteistoiminnan.
 
-## The Critical Role of Human Examples
+## Ihmisesimerkkien kriittinen rooli
 
-No engineering system can function without empirical data. In communication engineering, the `style-examples/` folder serves as our training data—real messages that have proven effective in the Finnish political context. These examples are not mere inspiration; they are the ground truth that constrains and guides the optimization system.
+Mikään suunnittelujärjestelmä ei voi toimia ilman empiiristä dataa. Viestintäsuunnittelussa `tyyliesimerkit/`-kansio toimii koulutusdatanamme—todellisia viestejä, jotka ovat osoittautuneet tehokkaiksi suomalaisessa poliittisessa kontekstissa. Nämä esimerkit eivät ole pelkkää inspiraatiota; ne ovat perustottuus, joka rajoittaa ja ohjaa optimointijärjestelmää.
 
-The examples serve multiple purposes:
-- **Validation**: Proof that certain approaches work with real audiences
-- **Constraints**: Define the boundaries of acceptable and effective communication
-- **Patterns**: Reveal linguistic and rhetorical structures that resonate
-- **Metrics**: Provide measurable success indicators (views, engagement, impact)
+Esimerkit palvelevat useita tarkoituksia:
+- **Validointi**: Todiste siitä, että tietyt lähestymistavat toimivat todellisten yleisöjen kanssa
+- **Rajoitteet**: Määrittelevät hyväksyttävän ja tehokkaan viestinnän rajat
+- **Mallit**: Paljastavat resonoivat kielelliset ja retoriset rakenteet
+- **Mittarit**: Tarjoavat mitattavia menestyksen indikaattoreita (näkymät, sitoutuminen, vaikutus)
 
-Without these human-created examples, the system would be optimizing blindly. With them, it can learn what actually moves people to action.
+Ilman näitä ihmisten luomia esimerkkejä järjestelmä optimoisi sokeasti. Niiden avulla se voi oppia, mikä todella saa ihmiset toimimaan.
 
-## Why Abstraction Levels Matter
+## Miksi abstraktiotasot ovat tärkeitä
 
-Complex systems require hierarchical organization. Just as a building needs architecture, structure, materials, and details, effective political communication requires multiple levels of planning and execution:
+Monimutkaiset järjestelmät vaativat hierarkkista organisointia. Aivan kuten rakennus tarvitsee arkkitehtuurin, rakenteen, materiaalit ja yksityiskohdat, tehokas poliittinen viestintä vaatii useita suunnittelun ja toteutuksen tasoja:
 
-- **Without abstraction**: Writers get overwhelmed trying to juggle strategy, style, grammar, and word choice simultaneously
-- **With abstraction**: Each level can be optimized independently, with clear interfaces between levels
-- **Result**: More consistent, more effective, and more scalable communication
+- **Ilman abstraktiota**: Kirjoittajat ylikuormittuvat yrittäessään jongleerata strategiaa, tyyliä, kielioppia ja sanavalintojai samanaikaisesti
+- **Abstraktion kanssa**: Jokaista tasoa voidaan optimoida itsenäisesti, selkeiden rajapintojen kanssa tasojen välillä
+- **Tulos**: Johdonmukaisempaa, tehokkaampaa ja skaalautuvampaa viestintää
 
-The abstraction hierarchy allows us to separate "what to say" from "how to say it" from "which words to use"—enabling systematic improvement at each level.
+Abstraktiohierarkia mahdollistaa "mitä sanoa" erottamisen "miten sanoa" -kysymyksestä ja "mitä sanoja käyttää" -kysymyksestä—mahdollistaen systemaattisen parantamisen jokaisella tasolla.
 
-## How This System Works
+## Miten tämä järjestelmä toimii
 
-This repository provides a multi-layered constraint system that enables AI tools (particularly Claude) to function as sophisticated optimization engines for political communication. By defining constraints at different abstraction levels, the system guides generation of highly targeted and effective political content.
+Tämä repositorio tarjoaa monitasoisen rajoitejärjestelmän, joka mahdollistaa AI-työkalujen (erityisesti Clauden) toimimisen kehittyneinä optimointimoottoreina poliittiselle viestinnälle. Määrittelemällä rajoitteita eri abstraktiotasoilla järjestelmä ohjaa erittäin kohdennetun ja tehokkaan poliittisen sisällön tuottamista.
 
-### The Five Levels of Abstraction
+### Viisi abstraktiotasoa
 
-#### Level 1: Strategic Goals (Highest Abstraction)
-**Files:** `CLAUDE_GOAL_*.md`
-- **Purpose**: Define what you want to achieve
-- **Content**: Campaign objectives, psychological journey models, strategic sequences
-- **Example**: "Convert skeptics to supporters" or "Mobilize base for action"
+#### Taso 1: Strategiset tavoitteet (Korkein abstraktio)
+**Tiedostot:** `CLAUDE_TAVOITE.md`
+- **Tarkoitus**: Määrittele mitä haluat saavuttaa
+- **Sisältö**: Kampanjatavoitteet, psykologiset matkamallit, strategiset sekvenssit
+- **Esimerkki**: "Muuta skeptikot kannattajiksi" tai "Mobilisoi kannattajakunta toimintaan"
 
-#### Level 2: Communication Styles
-**Files:** `CLAUDE_STYLE_*.md`
-- **Purpose**: Define how to communicate
-- **Content**: 7 distinct political communication styles with unique characteristics
-- **Example**: Oratory style for rallying, Analytical style for persuading intellectuals
+#### Taso 2: Viestintätyylit
+**Tiedostot:** `CLAUDE_TYYLI.md`
+- **Tarkoitus**: Määrittele miten viestiä
+- **Sisältö**: 7 erillistä poliittisen viestinnän tyyliä ainutlaatuisine ominaisuuksineen
+- **Esimerkki**: Paasaustyyli kokoontumisiin, Analyyttinen tyyli intellektuellien suostutteluun
 
-#### Level 3: Rhetorical Structures
-**Files:** `CLAUDE_RHETORIC_*.md`
-- **Purpose**: Define argumentation patterns
-- **Content**: Evidence types, framing methods, narrative arcs
-- **Example**: Use emotional appeals 60%, logical arguments 40%
+#### Taso 3: Retoriset rakenteet
+**Tiedostot:** `CLAUDE_RETORIIKKA.md`
+- **Tarkoitus**: Määrittele argumentaatiomallit
+- **Sisältö**: Todistustyypit, kehystysmenetelmät, narratiivikaaret
+- **Esimerkki**: Käytä emotionaalisia vetoomuksia 60%, loogisia argumentteja 40%
 
-#### Level 4: Syntactic Patterns
-**Files:** `CLAUDE_SYNTAX_*.md`
-- **Purpose**: Define sentence construction
-- **Content**: Sentence types, lengths, grammatical patterns
-- **Example**: 40-60% imperative sentences for Oratory style
+#### Taso 4: Syntaktiset mallit
+**Tiedostot:** `CLAUDE_SYNTAKSI.md`
+- **Tarkoitus**: Määrittele lauserakenteet
+- **Sisältö**: Lausetyypit, pituudet, kieliopilliset mallit
+- **Esimerkki**: 40-60% imperatiivisia lauseita Paasaustyylissä
 
-#### Level 5: Lexical Choices
-**Files:** `CLAUDE_LEXICON_*.md`
-- **Purpose**: Define word selection
-- **Content**: Vocabulary, registers, key phrases
-- **Example**: Use "sisu" and other cultural keywords in Oratory style
+#### Taso 5: Leksikaaliset valinnat
+**Tiedostot:** `CLAUDE_SANASTO.md`
+- **Tarkoitus**: Määrittele sanavalinta
+- **Sisältö**: Sanasto, rekisterit, avainlauseet
+- **Esimerkki**: Käytä "sisu" ja muita kulttuurisia avainsanoja Paasaustyylissä
 
-## Repository Structure
+## Repositorion rakenne
 
 ```
-├── posts/             # Single tactical messages  
-├── party-programs/    # Source material and positions
-├── framing/           # Communication techniques
-├── style-examples/    # THE FOUNDATION: Human-created effective examples
-└── CLAUDE_*.md       # The engineering specifications
+├── postaukset/        # Yksittäiset taktiset viestit  
+├── puolueohjelmat/    # Lähdemateriaali ja kannat
+├── kehystys/          # Viestintätekniikat
+├── tyyliesimerkit/    # PERUSTA: Ihmisten luomat tehokkaat esimerkit
+└── CLAUDE_*.md        # Suunnitteluspesifikaatiot
 ```
 
-### The Optimization Flow
+### Optimointivirta
 
-1. **Human Input**: Successful examples demonstrate what works
-2. **Pattern Extraction**: System analyzes examples for linguistic patterns
-3. **Constraint Definition**: Patterns become measurable constraints
-4. **Goal Setting**: Human defines desired outcome
-5. **Optimization**: System generates content maximizing goal achievement
-6. **Human Feedback**: Results inform next iteration
+1. **Ihmisen syöte**: Onnistuneet esimerkit osoittavat mikä toimii
+2. **Mallien poiminta**: Järjestelmä analysoi esimerkkejä kielellisten mallien löytämiseksi
+3. **Rajoitteiden määrittely**: Malleista tulee mitattavia rajoitteita
+4. **Tavoitteen asettaminen**: Ihminen määrittelee halutun lopputuloksen
+5. **Optimointi**: Järjestelmä generoi sisältöä maksimoiden tavoitteen saavuttamisen
+6. **Ihmisen palaute**: Tulokset informoivat seuraavaa iteraatiota
 
-## Getting Started
+## Aloittaminen
 
-1. **Define your objective**: What political goal do you want to achieve?
-2. **Consult the strategy guide**: `CLAUDE_GOAL_*.md` will map your objective to a campaign structure
-3. **Review available styles**: `CLAUDE_STYLE_*.md` shows the tools in your toolkit
-4. **Study examples**: The `style-examples/` folder contains battle-tested content
-5. **Create iteratively**: Use the A-B file pattern to refine your message
-6. **Let the system guide you**: Each abstraction level provides specific constraints
+1. **Määrittele tavoitteesi**: Minkä poliittisen tavoitteen haluat saavuttaa?
+2. **Konsultoi strategiaopasta**: `CLAUDE_TAVOITE.md` kartoittaa tavoitteesi kampanjarakenteeksi
+3. **Tarkastele saatavilla olevia tyylejä**: `CLAUDE_TYYLI.md` näyttää työkalupakin työkalut
+4. **Tutki esimerkkejä**: `tyyliesimerkit/`-kansio sisältää taistelussa testattua sisältöä
+5. **Luo iteratiivisesti**: Käytä A-B tiedostokuviota viestisi hiomiseen
+6. **Anna järjestelmän ohjata**: Jokainen abstraktiotaso tarjoaa erityisiä rajoitteita
 
-## Key Innovation
+## Keskeinen innovaatio
 
-This system transforms political communication from intuitive art to systematic engineering by:
-- Decomposing complexity into manageable layers
-- Providing measurable constraints at each layer
-- Enabling systematic optimization
-- Creating reproducible results
-- Allowing continuous improvement through iteration
+Tämä järjestelmä muuttaa poliittisen viestinnän intuitiivisesta taiteesta systemaattiseksi suunnitteluksi:
+- Hajottamalla monimutkaisuuden hallittaviksi tasoiksi
+- Tarjoamalla mitattavia rajoitteita jokaisella tasolla
+- Mahdollistamalla systemaattisen optimoinnin
+- Luomalla toistettavia tuloksia
+- Sallimalla jatkuvan parantamisen iteraation kautta
 
-## System Limitations
+## Järjestelmän rajoitukset
 
-### Campaign Creation Challenges
+### Kampanjaluomisen haasteet
 
-While this system excels at creating individual posts with specific styles, Claude has demonstrated limitations in creating full multi-stage campaigns:
+Vaikka tämä järjestelmä loistaa yksittäisten postausten luomisessa erityisillä tyyleillä, Claudella on osoitettu rajoituksia täysien monivaiheisten kampanjoiden luomisessa:
 
-- **Source Integrity**: When creating campaigns, Claude may misrepresent sources, citing research that actually argues against the campaign's position
-- **Consistency**: Maintaining a coherent political position across multiple posts and stages proves challenging
-- **Psychological Coherence**: The 5-stage journey model (AWAKEN → AGITATE → EDUCATE → ACTIVATE → INTEGRATE) requires nuanced psychological progression that exceeds current capabilities
+- **Lähteiden eheys**: Kampanjoita luotaessa Claude saattaa esittää lähteitä väärin, viitaten tutkimukseen, joka itse asiassa argumentoi kampanjan kantaa vastaan
+- **Johdonmukaisuus**: Yhtenäisen poliittisen kannan ylläpitäminen useiden postausten ja vaiheiden yli osoittautuu haasteelliseksi
+- **Psykologinen yhtenäisyys**: 5-vaiheinen matkamalli (HERÄTÄ → KIIHDYTÄ → KOULUTA → AKTIVOI → INTEGROI) vaatii hienovaraista psykologista etenemistä, joka ylittää nykyiset kyvyt
 
-### Recommended Approach
+### Suositeltu lähestymistapa
 
-For best results:
-- Focus on creating powerful single posts using the 7 communication styles
-- Use the style selection guides (CLAUDE_GOAL_*.md) to choose the most effective approach
-- Leverage the constraint system for individual messages rather than complex campaigns
-- Consider human-led campaign planning with AI-assisted individual post creation
+Parhaisiin tuloksiin:
+- Keskity luomaan voimakkaita yksittäisiä postauksia käyttäen 7 viestintätyyliä
+- Käytä tyylinvalintaoppaita (CLAUDE_TAVOITE.md) valitaksesi tehokkaimman lähestymistavan
+- Hyödynnä rajoitejärjestelmää yksittäisille viesteille monimutkaisten kampanjoiden sijaan
+- Harkitse ihmisvetoista kampanjasuunnittelua AI-avusteisella yksittäisten postausten luomisella
 
-The system remains highly effective for its core purpose: engineering individual pieces of political communication with unprecedented precision and impact.
+Järjestelmä pysyy erittäin tehokkaana ydintarkoituksessaan: yksittäisten poliittisen viestinnän osien suunnittelussa ennennäkemättömällä tarkkuudella ja vaikutuksella.
 
-## Language
+## Kieli
 
-- Finnish for actual political content
-- English for system documentation
-- Examples include both languages for maximum learning
+- Suomi varsinaiselle poliittiselle sisällölle
+- Englanti järjestelmädokumentaatioon tarvittaessa
+- Esimerkit sisältävät molempia kieliä maksimaalisen oppimisen vuoksi
 
 ---
 
-*This repository represents a new approach to political communication—one that combines human creativity with systematic optimization to achieve unprecedented effectiveness in the digital age.*
+*Tämä repositorio edustaa uutta lähestymistapaa poliittiseen viestintään—sellaista, joka yhdistää ihmisen luovuuden systemaattiseen optimointiin saavuttaakseen ennennäkemätöntä tehokkuutta digitaalisella aikakaudella.*
