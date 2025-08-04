@@ -1,13 +1,13 @@
-# CLAUDE_GOAL_FI.md - Tyylien valintaopas
+# CLAUDE_TAVOITE.md - Tyylien valintaopas
 
 ## Yleiskuvaus
 
 Tämä dokumentti auttaa valitsemaan oikean viestintätyylin poliittiseen postaukseen. Jokaisella tyylillä on oma psykologinen vaikutuksensa ja tehokkuutensa eri tilanteissa.
 
-**Tärkeää**: Kaikki tässä dokumentissa mainitut tyylinimet viittaavat 7 poliittisen viestinnän tyyliin, jotka on määritelty yksityiskohtaisesti dokumenteissa CLAUDE_STYLE_FI.md ja CLAUDE_STYLE_EN.md.
+**Tärkeää**: Kaikki tässä dokumentissa mainitut tyylinimet viittaavat 7 poliittisen viestinnän tyyliin, jotka on määritelty yksityiskohtaisesti dokumentissa CLAUDE_TYYLI.md.
 
 ## Tyylien nimiviittaukset
-- **Paasaustyyli** = Paasaustyyli/Oratory Style (CLAUDE_STYLE_*.md:stä)
+- **Paasaustyyli** = Paasaustyyli/Oratory Style (CLAUDE_TYYLI.md:stä)
 - **Analyyttinen** = Analyyttinen/Analytical Style
 - **Konseptuaalinen** = Konseptuaalinen/Conceptual Style
 - **Argumentoiva** = Argumentoiva/Argumentative Style
@@ -119,7 +119,7 @@ Tutkimukset osoittavat, että ihmiset tarvitsevat 7-12 altistusta viestille enne
 ### Tyylin valinta
 1. Analysoi käyttäjän tavoite
 2. Valitse 1-2 sopivinta tyyliä yllä olevista ohjeista
-3. Lue valitun tyylin yksityiskohtainen kuvaus CLAUDE_STYLE_FI.md:stä
+3. Lue valitun tyylin yksityiskohtainen kuvaus CLAUDE_TYYLI.md:stä
 4. Noudata tyylin tunnusmerkkejä tarkasti
 
 ### Postauksen pituus

@@ -1,4 +1,4 @@
-# CLAUDE_RHETORIC_FI.md - Retoriset rajoitteet suomalaiseen poliittiseen viestintään
+# CLAUDE_RETORIIKKA.md - Retoriset rajoitteet suomalaiseen poliittiseen viestintään
 
 ## Yleiskuvaus
 

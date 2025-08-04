@@ -1,8 +1,8 @@
-# CLAUDE_POST_FI.md - Opas yksittäisten postausten kirjoittamiseen
+# CLAUDE_POSTAUS.md - Opas yksittäisten postausten kirjoittamiseen
 
 ## Yleiskuvaus
 
-Tämä dokumentti tarjoaa Claudelle yksityiskohtaiset ohjeet tehokkaiden yksittäisten sosiaalisen median postausten luomiseen suomalaisessa poliittisessa kontekstissa. Se täydentää CLAUDE_STYLE_FI.md ja CLAUDE_GOAL_FI.md dokumentteja keskittyen erityisesti yhden postauksen kirjoittamisen tekniikoihin.
+Tämä dokumentti tarjoaa Claudelle yksityiskohtaiset ohjeet tehokkaiden yksittäisten sosiaalisen median postausten luomiseen suomalaisessa poliittisessa kontekstissa. Se täydentää CLAUDE_TYYLI.md ja CLAUDE_TAVOITE.md dokumentteja keskittyen erityisesti yhden postauksen kirjoittamisen tekniikoihin.
 
 ## Postauksen pituuden vaihtelu
 

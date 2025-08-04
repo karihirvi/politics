@@ -170,6 +170,11 @@ Kolme yksityiskohtaisten rajoitteiden tasoa sisällöntuotannon optimointiin:
 Yksityiskohtaiset ohjeet yksittäisten postausten luomiseen:
 - **CLAUDE_POSTAUS.md** - Suomenkielinen opas yksittäisten postausten kirjoittamiseen
 
+### Nyanssien opetussysteemi
+Opettaa Claudelle tekstin hienovaraisia vivahteita ja "kulmia":
+- **CLAUDE_NYANSSIT.md** - Ohje nyanssien oppimiseen ja opettamiseen
+- **nyanssit/** - Kansio oppimateriaalille ja analyyseille
+
 ### Oppaiden käyttö
 1. Käyttäjä kuvaa viestintätavoitteensa
 2. Claude tunnistaa sopivimman tyylin/tyylit

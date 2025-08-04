@@ -1,4 +1,4 @@
-# CLAUDE_SYNTAX_FI.md - Syntaktiset rajoitteet suomalaiseen poliittiseen viestintään
+# CLAUDE_SYNTAKSI.md - Syntaktiset rajoitteet suomalaiseen poliittiseen viestintään
 
 ## Yleiskuvaus
 

@@ -1,4 +1,4 @@
-# CLAUDE_LEXICON_FI.md - Leksikaaliset rajoitteet suomalaiseen poliittiseen viestintään
+# CLAUDE_SANASTO.md - Leksikaaliset rajoitteet suomalaiseen poliittiseen viestintään
 
 ## Yleiskuvaus
 

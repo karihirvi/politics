@@ -1,4 +1,4 @@
-# CLAUDE_STYLE_FI.md - Suomenkieliset tyyliohjeet
+# CLAUDE_TYYLI.md - Suomenkieliset tyyliohjeet
 
 ## Poliittisen viestinnän tyyliopas
 
