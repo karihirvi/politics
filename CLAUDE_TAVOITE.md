@@ -22,20 +22,36 @@ Tämä dokumentti auttaa valitsemaan oikean viestintätyylin poliittiseen postau
 - **Kriittis-poliittinen**: Paljasta skandaaleja, epäkohtia tai vastustajan heikkouksia
 - **Konseptuaalinen**: Esittele uusi näkökulma tai kehystä asia uudella tavalla
 
+**Suositellut retoriset tekniikat** (resurssit/retoriset-tekniikat.md):
+- Tu quoque (17) + Harhautus (3) - Järjestelmäkritiikki-yhdistelmä
+- Monimerkityksisyys (12) + Kehäpäätelmä (8) - Uudelleenmäärittely
+
 ### Kun haluat mobilisoida toimintaan
 **Suositellut tyylit**: Paasaustyyli, Populistinen
 - **Paasaustyyli**: Herätä kansallista ylpeyttä, luo "meidän joukkue" -henkeä
 - **Populistinen**: Tarjoa yksinkertaisia ratkaisuja, vetoa taloudellisiin huoliin
+
+**Suositellut retoriset tekniikat**:
+- Kansan suosio (1) + Sääliin vetoaminen (5) + Tunteisiin vetoaminen (16) - Kansan ääni -yhdistelmä
+- Väärä dilemma (4) + Kalteva pinta (14) - Epävarmuuden korostus
 
 ### Kun haluat opettaa tai vakuuttaa
 **Suositellut tyylit**: Analyyttinen, Argumentoiva
 - **Analyyttinen**: Selitä monimutkaisia asioita, rakenna auktoriteettia
 - **Argumentoiva**: Kumoa väitteitä, esitä loogisia perusteluja
 
+**Suositellut retoriset tekniikat**:
+- Auktoriteetti (9) + Rusinoiden poiminta (7) - Asiantuntijan arvovalta
+- Olkiukko (2) + Non sequitur (13) - Looginen rakentaminen (mieto-muodossa)
+
 ### Kun haluat vahvistaa arvoja tai identiteettiä
 **Suositellut tyylit**: Filosofis-uskonnollinen, Paasaustyyli
 - **Filosofis-uskonnollinen**: Vetoa perinteisiin, arvoihin ja merkitykseen
 - **Paasaustyyli**: Vahvista yhteisöllisyyttä ja kansallista identiteettiä
+
+**Suositellut retoriset tekniikat**:
+- Traditio (10) + Tunteisiin vetoaminen (16) - Arvojen puolustus
+- Luontoon vetoaminen (11) + Kehäpäätelmä (8) - Ikuiset totuudet
 
 ## Psykologiset periaatteet
 
@@ -116,11 +132,17 @@ Tutkimukset osoittavat, että ihmiset tarvitsevat 7-12 altistusta viestille enne
 
 ## Käytännön ohjeet Claudelle
 
-### Tyylin valinta
+### Tyylin ja tekniikoiden valinta
 1. Analysoi käyttäjän tavoite
 2. Valitse 1-2 sopivinta tyyliä yllä olevista ohjeista
-3. Lue valitun tyylin yksityiskohtainen kuvaus CLAUDE_TYYLI.md:stä
-4. Noudata tyylin tunnusmerkkejä tarkasti
+3. Valitse 2-3 retorista tekniikkaa tavoitteen mukaan
+4. Päätä vahvuustaso:
+   - **Mieto**: Pitkän aikavälin vakuuttaminen, journalistit
+   - **Vahva-kansa**: Kannattajien mobilisointi, tunteet
+   - **Vahva-akateeminen**: Kompleksit aiheet, legitimointi
+5. Lue valitun tyylin yksityiskohtainen kuvaus CLAUDE_TYYLI.md:stä
+6. Tarkista tekniikoiden käyttöohjeet resurssit/retoriset-tekniikat.md:stä
+7. Noudata tyylin tunnusmerkkejä ja tekniikoiden ohjeita tarkasti
 
 ### Postauksen pituus
 - **LYHYT**: 2-4 kappaletta
@@ -131,6 +153,15 @@ Tutkimukset osoittavat, että ihmiset tarvitsevat 7-12 altistusta viestille enne
 - Kun käyttäjä antaa palautetta, sovella se koko tekstiin
 - Jos käyttäjä korjaa kirjoitusasun, korjaa kaikkialta
 - Jos käyttäjä ehdottaa sävyn muutosta, harkitse sen soveltamista koko tekstiin
+
+## Retoristen tekniikoiden integrointi tavoitteisiin
+
+Tyylit ja retoriset tekniikat vahvistavat toisiaan. Valitse tekniikat jotka:
+1. Sopivat valittuun tyyliin
+2. Tukevat tavoitetta
+3. Resonoivat kohderyhmän kanssa
+
+Katso resurssit/retoriset-tekniikat.md:n "Tehokkaita tekniikoiden yhdistelmiä" -osio valmiille yhdistelmille.
 
 ## Versioiden hallinta
 

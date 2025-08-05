@@ -4,6 +4,8 @@
 
 Tämä dokumentti määrittelee retoriset rakenteet ja argumentaatiotekniikat jokaiselle seitsemälle poliittisen viestinnän tyylille. Retoriikka toimii syntaksin ja sisällön välissä, määrittäen miten argumentit rakennetaan ja esitetään.
 
+**HUOM:** Tämä dokumentti toimii yhdessä resurssit/retoriset-tekniikat.md:n kanssa, joka sisältää 17 konkreettista retorista tekniikkaa mieto/vahva-kansa/vahva-akateeminen -muodoissa.
+
 ## Retoristen rajoitteiden tasot
 
 1. **Argumentaatiorakenteet** - Miten väitteet perustellaan
@@ -55,6 +57,15 @@ Hyperbolit:                     Keskitaso
 Antiteesit:                     Keskitaso
 ```
 
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Tunteisiin vetoaminen (16):     Vahva-kansa
+Traditioon vetoaminen (10):     Vahva-kansa
+Kansan suosio (1):              Vahva-kansa
+Kalteva pinta (14):             Vahva-kansa
+Väärä dilemma (4):              Vahva-kansa
+```
+
 ### Tunnedynamiikka
 ```
 Aloitus: Huoli/viha (80%)
@@ -104,6 +115,15 @@ Esimerkit:                      Korkea
 Vastakkainasettelut:            Keskitaso
 ```
 
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Auktoriteettiin vetoaminen (9): Vahva-akateeminen
+Rusinoiden poiminta (7):        Mieto/Vahva-akateeminen
+Non sequitur (13):              Vahva-akateeminen
+Kehäpäätelmä (8):               Mieto
+Tietämättömyyteen vetoaminen (6): Vahva-akateeminen
+```
+
 ### Kognitiivinen rakenne
 ```
 1. Ilmiön esittely (20%)
@@ -145,6 +165,14 @@ Metakäsitteet:                  Keskitaso
 Neologismit:                    Matala
 ```
 
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Monimerkityksisyys (12):        Mieto
+Väärä vertaus (15):             Mieto
+Kehäpäätelmä (8):               Mieto
+Traditio (10):                  Mieto
+```
+
 ## 4. ARGUMENTOIVA TYYLI - Retoriset rajoitteet
 
 ### Argumentaatiorakenteet
@@ -176,6 +204,14 @@ Kysymys-vastaus-rakenne:        Korkea
 If-then-logiikka:               Korkea
 Vastaesimerkit:                 Keskitaso
 Analoginen päättely:            Keskitaso
+```
+
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Olkiukko (2):                   Mieto (kysymyksiä, ei vääristelyä)
+Non sequitur (13):              Mieto
+Tu quoque (17):                 Mieto
+Väärä dilemma (4):              Mieto
 ```
 
 ### Vastaväitteiden käsittely
@@ -220,6 +256,14 @@ Ironiamarkerit:                 Keskitaso
 Hyperbolisointi:                Keskitaso
 ```
 
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Tu quoque (17):                 Vahva-kansa
+Harhautus (3):                  Vahva-kansa
+Rusinoiden poiminta (7):        Vahva-kansa
+Sääliin vetoaminen (5):         Vahva-kansa
+```
+
 ### Paljastuksen dramaturgia
 ```
 1. Väite/lupaus (20%)
@@ -260,6 +304,14 @@ Paradoksit:                     Keskitaso
 Viisauslauseet:                 Korkea
 Symbolit:                       Korkea
 Allegoria:                      Matala
+```
+
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Traditioon vetoaminen (10):     Mieto
+Luontoon vetoaminen (11):       Mieto
+Tunteisiin vetoaminen (16):     Mieto
+Auktoriteetti (9):              Mieto (Raamattu)
 ```
 
 ### Hengellinen kaari
@@ -303,6 +355,14 @@ Yksinkertaiset ratkaisut:       Korkea
 Viholliskuvat:                  Keskitaso
 ```
 
+### Suositellut tekniikat (retoriset-tekniikat.md)
+```
+Kansan suosio (1):              Vahva-kansa
+Väärä vertaus (15):             Vahva-kansa
+Sääliin vetoaminen (5):         Vahva-kansa
+Kalteva pinta (14):             Vahva-kansa
+```
+
 ### Populistinen rakenne
 ```
 1. Ongelman nimeäminen (30%)
@@ -333,10 +393,27 @@ Korkea: Paasaustyyli, Kriittis-poliittinen, Populistinen
 
 1. **Tunnista päätavoite** - Mikä on viestin ydinargumentti?
 2. **Valitse evidenssi** - Käytä tyylin mukaisia todisteita
-3. **Rakenna kaari** - Noudata narratiivista rakennetta
-4. **Lisää tekniikat** - Käytä vähintään 3 retorista keinoa
-5. **Tarkista intensiteetti** - Vastaa tyylin vaatimaa tasoa
-6. **Kehystä oikein** - Käytä tyylin mukaista kehystämistä
+3. **Valitse retoriset tekniikat** - Katso suositukset kunkin tyylin alta
+4. **Päätä vahvuustaso**:
+   - Mieto: Uskottava, maltillinen
+   - Vahva-kansa: Tunteellinen, suora
+   - Vahva-akateeminen: Oppineen oloinen
+5. **Rakenna kaari** - Noudata narratiivista rakennetta
+6. **Lisää tekniikat** - Käytä vähintään 3 retorista keinoa
+7. **Tarkista intensiteetti** - Vastaa tyylin vaatimaa tasoa
+8. **Kehystä oikein** - Käytä tyylin mukaista kehystämistä
+
+## Retoristen tekniikoiden integrointi
+
+Jokaisen tyylin alle on lisätty suositukset resurssit/retoriset-tekniikat.md:stä. Tekniikoiden numerot viittaavat kyseiseen dokumenttiin. Valitse tekniikat tyylin ja kohderyhmän mukaan:
+
+- **Paasaustyyli**: Käytä pääosin vahva-kansa-muotoa
+- **Analyyttinen**: Käytä mieto- tai vahva-akateeminen-muotoa
+- **Konseptuaalinen**: Käytä pääosin mieto-muotoa
+- **Argumentoiva**: Käytä mieto-muotoa
+- **Kriittis-poliittinen**: Käytä vahva-kansa-muotoa
+- **Filosofis-uskonnollinen**: Käytä mieto-muotoa
+- **Populistinen**: Käytä vahva-kansa-muotoa
 
 ## Retorinen tarkistuslista
 

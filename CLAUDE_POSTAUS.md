@@ -155,6 +155,52 @@ Rakenne:
 2. Nykyhetken kriisi
 3. Tulevaisuuden uhka/lupaus
 
+## Retoristen tekniikoiden käyttö postauksissa
+
+### Tekniikoiden valinta tyylin mukaan
+
+Katso resurssit/retoriset-tekniikat.md täydelliselle listalle. Tässä suositukset:
+
+**Paasaustyyli**
+- Tunteisiin vetoaminen (16): Vahva-kansa
+- Traditio (10): Vahva-kansa
+- Kalteva pinta (14): Vahva-kansa
+- Yhdistä 2-3 tekniikkaa voimakkaan vaikutuksen luomiseksi
+
+**Analyyttinen**
+- Auktoriteetti (9): Vahva-akateeminen
+- Rusinoiden poiminta (7): Mieto/Vahva-akateeminen
+- Non sequitur (13): Vahva-akateeminen
+- Käytä tekniikoita luodaksesi uskottavuutta
+
+**Populistinen**
+- Kansan suosio (1): Vahva-kansa
+- Väärä vertaus (15): Vahva-kansa ("Valtio kuin kotitalous")
+- Sääliin vetoaminen (5): Vahva-kansa
+- Yhdistä yksinkertaisiin ratkaisuihin
+
+**Kriittis-poliittinen**
+- Tu quoque (17): Vahva-kansa
+- Harhautus (3): Laajenna systemaattiseen ongelmaan
+- Rusinoiden poiminta (7): Valitse pahimmat esimerkit
+
+### Vahvuustason valinta
+
+**Mieto**: Käytä kun haluat säilyttää uskottavuuden
+- Journalistit, mielipidevaikuttajat
+- Pitkän aikavälin vaikuttaminen
+- Kun aihe on herkkä
+
+**Vahva-kansa**: Käytä kun haluat mobilisoida
+- Kannattajille suunnatut postaukset
+- Tunnepitoiset aiheet
+- Kun haluat jakoja ja reaktioita
+
+**Vahva-akateeminen**: Käytä kun haluat vaikuttaa oppineelta
+- Kompleksit aiheet
+- Kun vastustajat ovat koulutettuja
+- Haluat legitimoida kantasi
+
 ## Muotoiluohjeet
 
 ### Tekstin asettelu
@@ -243,8 +289,23 @@ Kun käyttäjä pyytää yksittäistä postausta:
 2. Tarkista edellisten postausten pituudet
 3. Valitse MERKITTÄVÄSTI eri pituus
 4. Noudata valitun tyylin erityispiirteitä
-5. Käytä vähintään 2 erityistekniikkaa
-6. Tarkista tarkistuslista
-7. ÄLÄ lisää hashtageja
+5. Valitse 2-3 retorista tekniikkaa (retoriset-tekniikat.md)
+6. Päätä vahvuustaso (mieto/vahva-kansa/vahva-akateeminen)
+7. Käytä vähintään 2 erityistekniikkaa
+8. Tarkista tarkistuslista
+9. ÄLÄ lisää hashtageja
 
 Muista: Vaihtelu on avain. Älä koskaan tee kahta samanlaista postausta peräkkäin.
+
+## Retoristen tekniikoiden integrointi
+
+Postaukset tulevat tehokkaammiksi kun yhdistät:
+1. **Tyylin** (CLAUDE_TYYLI.md)
+2. **Retoriset tekniikat** (resurssit/retoriset-tekniikat.md)
+3. **Postauksen rakenteen** (tämä dokumentti)
+
+Tehokkaimmat yhdistelmät:
+- Paasaus + "Kansan ääni" -yhdistelmä (tekniikat 1+5+16)
+- Populistinen + "Epävarmuuden korostus" (tekniikat 6+4+14)
+- Analyyttinen + "Asiantuntijan arvovalta" (tekniikat 9+7+13)
+- Kriittinen + "Järjestelmäkritiikki" (tekniikat 17+3+13)

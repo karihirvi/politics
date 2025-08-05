@@ -37,6 +37,15 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - e012-rikkautta-ja-voimaa.txt
 - e013-laki-ja-jarjestys.txt
 
+### Suositellut retoriset tekniikat
+- **Tunteisiin vetoaminen (16)** - Vahva-kansa-versio
+- **Traditioon vetoaminen (10)** - Suomalaiset arvot ja perinteet
+- **Kansan suosio (1)** - "Suomalaiset eivät enää hyväksy..."
+- **Kalteva pinta (14)** - Varoittavat esimerkit
+- **Väärä dilemma (4)** - "Joko me tai he"
+- Käytä tekniikoita vahva-kansa-muodossa
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
+
 ## 2. Analyyttinen tyyli
 
 ### Tunnusmerkit
@@ -63,6 +72,15 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - e001-vaestonvaihto-termi.txt
 - e017-presidentinvaalkampanja-stubb.txt
 
+### Suositellut retoriset tekniikat
+- **Auktoriteettiin vetoaminen (9)** - Vahva-akateeminen-versio
+- **Rusinoiden poiminta (7)** - Mieto/vahva-akateeminen
+- **Non sequitur (13)** - Yhdistä asioita laajempaan kuvaan
+- **Kehäpäätelmä (8)** - Rakenna arvoista
+- **Tietämättömyyteen vetoaminen (6)** - "Tietoa pimitetään"
+- Käytä tekniikoita mieto- tai vahva-akateeminen-muodossa
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
+
 ## 3. Konseptuaalinen tyyli
 
 ### Tunnusmerkit
@@ -87,6 +105,14 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 ### Esimerkit
 - e003-yksi-kulttuuri-monta-varia.txt
 - e004-ruotsissa-murhattu-13v-poika.txt
+
+### Suositellut retoriset tekniikat
+- **Monimerkityksisyys (12)** - Määrittele käsitteet uudelleen
+- **Väärä vertaus (15)** - Käytä havainnollistamiseen
+- **Kehäpäätelmä (8)** - Rakenna jaetuista arvoista
+- **Traditio (10)** - Yhdistä uusi vanhaan
+- Käytä tekniikoita mieto-muodossa
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
 
 ## 4. Argumentoiva tyyli
 
@@ -113,6 +139,14 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - e002-pukeutumispakko-burkaan.txt
 - e015-siirtolaisvyory-eurooppaan.txt
 
+### Suositellut retoriset tekniikat
+- **Olkiukko (2)** - Esitä kysymyksiä vääristelyjen sijaan
+- **Non sequitur (13)** - Looginen silta argumenttien välille
+- **Tu quoque (17)** - Vastaa ensin, osoita epäjohdonmukaisuus sitten
+- **Väärä dilemma (4)** - Tunnusta muut vaihtoehdot
+- Käytä tekniikoita mieto-muodossa
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
+
 ## 5. Kriittis-poliittinen tyyli
 
 ### Tunnusmerkit
@@ -137,6 +171,14 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 ### Esimerkit
 - e010-valheiden-virta.txt (myös paasaustyylissä)
 - e016-diana-ja-sanna-marin.txt
+
+### Suositellut retoriset tekniikat
+- **Tu quoque (17)** - Osoita tekopyhyys
+- **Harhautus (3)** - Laajenna yksittäisestä systeemiseen
+- **Rusinoiden poiminta (7)** - Valitse vahvimmat esimerkit
+- **Sääliin vetoaminen (5)** - "Kansa kärsii"
+- Käytä tekniikoita vahva-kansa-muodossa
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
 
 ## 6. Filosofis-uskonnollinen tyyli
 
@@ -163,6 +205,14 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 - e009-jumala-loi-taivaan-ja-maan.txt (myös paasaustyylissä)
 - e014-uskonnon-ja-omantunnon-vapaus.txt
 
+### Suositellut retoriset tekniikat
+- **Traditioon vetoaminen (10)** - Ikuiset arvot
+- **Luontoon vetoaminen (11)** - Jumalan luoma järjestys
+- **Tunteisiin vetoaminen (16)** - Henkinen ulottuvuus
+- **Auktoriteetti (9)** - Raamattu ja kirkko
+- Käytä tekniikoita mieto-muodossa, sävyssä kunnioitus
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
+
 ## 7. Populistinen tyyli
 
 ### Tunnusmerkit
@@ -187,13 +237,36 @@ Tämä dokumentti sisältää seitsemän poliittisen viestinnän tyyliä, joita 
 ### Esimerkit
 - e011-halpa-energia.txt (myös paasaustyylissä)
 
+### Suositellut retoriset tekniikat
+- **Kansan suosio (1)** - "Kansa vaatii..."
+- **Väärä vertaus (15)** - "Kuin kotitalous"
+- **Sääliin vetoaminen (5)** - Taloudelliset vaikeudet
+- **Kalteva pinta (14)** - "Ensin vähän, sitten..."
+- Käytä tekniikoita vahva-kansa-muodossa
+- Katso tarkemmat ohjeet: resurssit/retoriset-tekniikat.md
+
 ## Käyttöohjeet
 
 1. **Analysoi tavoite** - Mitä haluat saavuttaa?
 2. **Valitse tyyli** - Mikä tyyli sopii parhaiten tavoitteeseen?
-3. **Harkitse yhdistämistä** - Joskus kahden tyylin yhdistelmä toimii parhaiten
-4. **Mukauta kohderyhmälle** - Säädä sävyä ja sanastoa vastaanottajien mukaan
-5. **Mittaa tehokkuutta** - Seuraa reaktioita ja opettele mikä toimii
+3. **Valitse retoriset tekniikat** - Katso suositukset tyylin alta
+4. **Päätä vahvuustaso**:
+   - Mieto: Maltillinen, uskottava
+   - Vahva-kansa: Tunteellinen, suora
+   - Vahva-akateeminen: Oppineen oloinen
+5. **Harkitse yhdistämistä** - Joskus kahden tyylin yhdistelmä toimii parhaiten
+6. **Mukauta kohderyhmälle** - Säädä sävyä ja sanastoa vastaanottajien mukaan
+7. **Mittaa tehokkuutta** - Seuraa reaktioita ja opettele mikä toimii
+
+## Retoristen tekniikoiden integrointi
+
+Jokaisen tyylin alle on lisätty suositellut retoriset tekniikat resurssit/retoriset-tekniikat.md-tiedostosta. Tekniikoiden numerot viittaavat kyseiseen dokumenttiin. Valitse 2-3 tekniikkaa per postaus ja yhdistä ne valittuun tyyliin.
+
+Tehokkaimmat yhdistelmät:
+- **Paasaus + Kansan ääni -yhdistelmä** (tekniikat 1+5+16)
+- **Analyyttinen + Asiantuntijan arvovalta** (tekniikat 9+7+13)
+- **Kriittinen + Järjestelmäkritiikki** (tekniikat 17+3+13)
+- **Populistinen + Epävarmuuden korostus** (tekniikat 6+4+14)
 
 ## Muistilista
 - Suomenkielisissä teksteissä käytä aina selkeää, kansantajuista kieltä
