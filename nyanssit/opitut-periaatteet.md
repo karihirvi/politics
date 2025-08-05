@@ -53,15 +53,32 @@ Tämä dokumentti kokoaa yhteen korjauksista opitut periaatteet. Päivittyy jatk
 ### Yksinkertaisuus särmällä
 ❌ ÄLÄ: "Voisimme mahdollisesti harkita"
 ✅ KÄYTÄ: "Tehdään se nyt"
+❌ ÄLÄ: Puolustaudu ("ei ole rasismia")
+✅ KÄYTÄ: Positiivinen kehystys ("on arkijärkeä")
 
 ### Toiston voima
 - "Halvempaa bensaa. Halvempaa dieseliä. Halvempaa ruokaa."
 - Kolmen sääntö, mutta epätasaisesti
+- MUTTA: Vältä liiallista toistoa samalla rakenteella ("Kun... Kun... Kun...")
+- Parempi: Yhdistä tai vaihtele rytmiä
 
 ### Arkikielen käyttö
 - "Rahat" eikä "taloudelliset resurssit"
 - "Maksaa" eikä "kustantaa"
 - Murteen ripaus: "mä" sopivassa kohdassa
+
+### Rytminen vaihtelu (p003-oppeja)
+- Aloitus: Lyhyet, iskevät lauseet ("Pankissa ei. Kaupassa ei.")
+- Keskikohta: Pidempiä, sujuvampia lauseita
+- Lopetus: Lyhyt iskulause ("Burkakielto on arkijärkeä.")
+
+### Numeroiden käyttö
+❌ ÄLÄ: Tarkkoja lukuja ilman lähteitä ("70% suomalaisista")
+✅ KÄYTÄ: Yleisempiä ilmauksia ("Moni suomalainen")
+
+### Kalteva pinta -argumentit
+❌ ÄLÄ: Liian suuret loogiset hypyt (burkasta suoraan koulukieltoon)
+✅ KÄYTÄ: Asteittainen eteneminen samassa teemassa
 
 ## Konseptuaalisen tyylin nyanssit
 

@@ -63,11 +63,17 @@ Nämä ovat rakenteita ja fraaseja, jotka paljastavat tekstin koneellisen alkupe
 ❌ Abstraktit käsitteet
 ❌ Pitkät lauseet
 ❌ Akateeminen sävy
+❌ Puolustautuminen ("ei ole rasismia")
+❌ Tarkat luvut ilman lähteitä
+❌ Liian suuret loogiset hypyt
+❌ Liiallinen toisto samalla rakenteella
 
 ✅ Yksinkertainen ja suora
 ✅ Konkreettiset esimerkit
-✅ Lyhyet, iskevät lauseet
+✅ Vaihteleva rytmi (lyhyt-pitkä-lyhyt)
 ✅ Arjen kieli
+✅ Vetoa "meidän tapaamme"
+✅ Lopeta lyhyeen iskulauseeseen
 
 ## Kieliopilliset anti-patternit
 
