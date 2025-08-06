@@ -297,15 +297,53 @@ Kun käyttäjä pyytää yksittäistä postausta:
 
 Muista: Vaihtelu on avain. Älä koskaan tee kahta samanlaista postausta peräkkäin.
 
+## Kehystämisen periaatteet postauksissa
+
+### 1. Vältä negaatioita
+
+**Periaate**: Älä käytä ei-sanoja vastustaessasi jotain. Esitä asia positiivisena väitteenä.
+
+❌ **Väärin**:
+- "Tämä EI ole oikein"
+- "Emme hyväksy..."
+- "Ei pidä paikkaansa"
+
+✅ **Oikein**:
+- "Tämä on väärin"
+- "Vastustamme..."
+- "Totuus on toisenlainen"
+
+### 2. Hallitse kehys
+
+**Älä koskaan**:
+- Toista vastustajan väitteitä
+- Vastaa vastustajan kehyksessä
+- Vahvista vastustajan termejä
+
+**Tee näin**:
+- Luo oma kehys heti
+- Käytä omia termejä
+- Ohjaa keskustelua
+
+### 3. Metaforien voima
+
+Käytä konkreettisia, arkisia metaforia:
+- Ruokakauppa, pankki, koti
+- Isäntä ja vieras
+- Arkiset tilanteet
+
+Katso lisää: resurssit/kehystys.md
+
 ## Retoristen tekniikoiden integrointi
 
 Postaukset tulevat tehokkaammiksi kun yhdistät:
 1. **Tyylin** (CLAUDE_TYYLI.md)
 2. **Retoriset tekniikat** (resurssit/retoriset-tekniikat.md)
-3. **Postauksen rakenteen** (tämä dokumentti)
+3. **Kehystämisen** (resurssit/kehystys.md)
+4. **Postauksen rakenteen** (tämä dokumentti)
 
 Tehokkaimmat yhdistelmät:
-- Paasaus + "Kansan ääni" -yhdistelmä (tekniikat 1+5+16)
-- Populistinen + "Epävarmuuden korostus" (tekniikat 6+4+14)
-- Analyyttinen + "Asiantuntijan arvovalta" (tekniikat 9+7+13)
-- Kriittinen + "Järjestelmäkritiikki" (tekniikat 17+3+13)
+- Paasaus + "Kansan ääni" -yhdistelmä (tekniikat 1+5+16) + Positiivinen kehystys
+- Populistinen + "Epävarmuuden korostus" (tekniikat 6+4+14) + Arkiset metaforat
+- Analyyttinen + "Asiantuntijan arvovalta" (tekniikat 9+7+13) + Abstrakti kehystys
+- Kriittinen + "Järjestelmäkritiikki" (tekniikat 17+3+13) + Vertailukehys

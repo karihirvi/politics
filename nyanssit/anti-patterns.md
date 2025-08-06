@@ -14,6 +14,28 @@ Nämä ovat rakenteita ja fraaseja, jotka paljastavat tekstin koneellisen alkupe
 ✅ Konkreettinen: "Kävelin tänään kadulla."
 ✅ Haastava: "Kuinka kauan vielä?"
 
+### Negaatiokehys
+❌ "Maahanmuutto EI ole rikkaus"
+❌ "Tämä EI ole oikea ratkaisu"
+❌ "En hyväksy tätä politiikkaa"
+❌ "Emme voi sallia..."
+
+✅ "Maahanmuutto köyhdyttää yhteiskuntaa"
+✅ "Tämä on väärä ratkaisu"
+✅ "Vastustan tätä politiikkaa"
+✅ "Pysäytämme..."
+
+### Vastustajan kehyksessä vastaaminen
+❌ Toistaa vastustajan termit
+❌ Selitellä miksi vastustaja on väärässä
+❌ Puolustautua syytöksiä vastaan
+❌ Hyväksyä vastustajan lähtökohdat
+
+✅ Luo oma kehys heti
+✅ Käytä omia termejä
+✅ Vaihda näkökulma
+✅ Aseta omat lähtökohdat
+
 ### Akateeminen neutraalius
 ❌ "Toisaalta... toisaalta..."
 ❌ "Voidaan argumentoida, että..."

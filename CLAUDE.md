@@ -137,6 +137,7 @@ Tekstin kirjoittamiseen voit käyttää taustatietoja ja muita resursseja:
 - **puolueohjelmat** - sisältää eri poliittisten puolueiden viralliset ohjelmat
 - **kehystys** - sisältää tietoa kehystystekniikoista
 - **resurssit** - sisältää esimerkkejä ja muita materiaaleja
+  - **resurssit/oppaat/** - PDF-muotoisia oppaita viestintätekniikkoihin (esim. kehystysopas-1-1.pdf)
 - **tyyliesimerkit** - sisältää valikoituja esimerkkejä aiemmista postauksista, joita voit käyttää inspiraationa tai viitteenä.
   Esimerkit on valittu niiden arvioidun tehokkuuden perusteella suomalaisessa poliittisessa viestinnässä. Ne on numeroitu 
   helppoa viittausta varten, esim. e001-..., e002-... jne. Etuliite "e" tarkoittaa "esimerkki" (example), jotta Claude 
@@ -241,3 +242,7 @@ Opettaa Claudelle tekstin hienovaraisia vivahteita ja "kulmia":
   - Otsikot sopivilla `#`-tasoilla
   - Asianmukaiset rivinvaihdot osioiden välillä
 - **Git commit -viestit**: Aina englanniksi
+- **TÄRKEÄÄ - Tiedostojärjestelmässä navigointi**:
+  - Tarkista AINA ensin nykyinen työhakemisto `pwd`-komennolla ennen tiedostojen luomista tai siirtämistä
+  - Käytä absoluuttisia polkuja epäselvissä tilanteissa
+  - Vältä sekaannuksia suhteellisten polkujen kanssa

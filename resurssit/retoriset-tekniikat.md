@@ -2,6 +2,24 @@
 
 Tämä dokumentti esittelee tehokkaita retorisia tekniikoita, joita voidaan hyödyntää poliittisessa viestinnässä. Vaikka nämä tekniikat tunnetaan perinteisesti "argumentointivirheinä", ne ovat todellisuudessa voimakkaita suostuttelun välineitä kun niitä käytetään hienovaraisesti ja yhdistetään faktoihin. Jokaisen tekniikan kohdalla esitellään sekä sen perinteinen kritiikki että strateginen soveltaminen uskottavuuden säilyttäen.
 
+## Kehystämisen periaatteet tekniikoiden käytössä
+
+**TÄRKEÄÄ**: Yhdistä tekniikat kehystämiseen maksimaalisen tehon saavuttamiseksi:
+
+1. **Vältä negaatioita** - Kun käytät tekniikkaa, esitä väitteet positiivisina
+   - ❌ "Tämä EI ole hyväksi Suomelle"
+   - ✅ "Tämä vahingoittaa Suomea"
+
+2. **Hallitse kehys** - Älä toista vastustajan termejä
+   - ❌ "Väestönvaihto on salaliittoteoria" (toistaa termin)
+   - ✅ "Väestörakenteen muutos on tilastoitu fakta"
+
+3. **Käytä metaforia** - Tee abstrakti konkreettiseksi
+   - "Valtio kuin kotitalous" (tekniikka 15)
+   - "Suomi on kuin perhe" (tekniikka 16)
+
+Katso lisää: resurssit/kehystys.md
+
 ## Pikaviite teemoittain
 
 ### Maahanmuuttokeskustelu

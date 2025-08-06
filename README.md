@@ -1,136 +1,137 @@
-# Poliittisen viestinnän suunnittelujärjestelmä
+# AI-pohjainen poliittisen viestinnän suunnittelujärjestelmä
 
-Systemaattinen lähestymistapa tehokkaaseen poliittiseen viestintään Suomen kontekstissa.
+Käytännöllisiä työkaluja tehokkaaseen poliittiseen viestintään suomalaisessa kontekstissa.
 
-## Viestintäsuunnittelun filosofia
+## Mikä tämä on?
 
-Perinteistä poliittista viestintää on käsitelty taidemuotona—luottaen intuitioon, karismaan ja yrityksen ja erehdyksen menetelmään. Tämä repositorio edustaa paradigman muutosta: poliittisen viestinnän käsittelyä suunnittelutieteenä, jossa viestit voidaan systemaattisesti suunnitella, optimoida ja hioa mitattavien rajoitteiden ja todistettujen mallien perusteella.
+Tämä on AI-pohjainen **optimointijärjestelmä** poliittiseen viestintään. Sen sijaan että luottaisimme pelkkään vaistoon, järjestelmä optimoi viestejä systemaattisesti kohti määriteltyjä tavoitteita. Kyse on viestinnän muuttamisesta intuitiosta mitattavaksi prosessiksi.
 
-Viestintäsuunnittelun ytimessä on optimointiongelma: ihmiset määrittelevät tavoitteet, koneet käyttävät optimointia luodakseen viestejä, jotka ihmisten lukemina tuottavat maksimaalisen vaikutuksen tavoitteiden edistämisessä. Vaikka ihmiset ovat paljon enemmän kuin reaktiivisia koneita, suostuttelun mallintamisen tarkoituksessa voimme approksimoida yleisön reaktioita toisena kielimallina—sellaisena, joka reagoi tilastollisesti tiettyihin kielellisiin ja emotionaalisiin malleihin. Tämä ei tarkoita deterministisiä reaktioita, vaan pikemminkin todennäköisyyksiä, joita voidaan mitata ja optimoida.
+### Tieteellinen perusta
 
-Aivan kuten ohjelmistosuunnittelu muutti ohjelmoinnin käsityöstä tieteenalaksi, viestintäsuunnittelu muuttaa poliittisen viestinnän arvailusta tieteeksi. Hajottamalla monimutkaisen suostutteluhaasteen hallittaviksi abstraktiotasoiksi voimme optimoida jokaista komponenttia itsenäisesti varmistaen samalla niiden harmonisen yhteistoiminnan.
+Optimointiprosessi hyödyntää tutkimustietoa usealta alalta, esimerkiksi:
+- **Kognitiivinen kielitiede**: Miten kieli muokkaa ajatteluamme
+- **Kehystysteoria**: Miten metaforat ja kehykset ohjaavat ymmärrystämme
+- **Priming-ilmiö**: Miten toistuvat käsitteet muuttavat maailmankuvaamme
+- **Tunnepsykologia**: Miten tunteet vaikuttavat päätöksentekoon
 
-## Ihmisesimerkkien kriittinen rooli
+Järjestelmä yhdistää nämä tutkimustulokset AI-optimointiin ja kehittyy jatkuvasti käytön myötä.
 
-Mikään suunnittelujärjestelmä ei voi toimia ilman empiiristä dataa. Viestintäsuunnittelussa `tyyliesimerkit/`-kansio toimii koulutusdatanamme—todellisia viestejä, jotka ovat osoittautuneet tehokkaiksi suomalaisessa poliittisessa kontekstissa. Nämä esimerkit eivät ole pelkkää inspiraatiota; ne ovat perustottuus, joka rajoittaa ja ohjaa optimointijärjestelmää.
+### Optimointiprosessi
 
-Esimerkit palvelevat useita tarkoituksia:
-- **Validointi**: Todiste siitä, että tietyt lähestymistavat toimivat todellisten yleisöjen kanssa
-- **Rajoitteet**: Määrittelevät hyväksyttävän ja tehokkaan viestinnän rajat
-- **Mallit**: Paljastavat resonoivat kielelliset ja retoriset rakenteet
-- **Mittarit**: Tarjoavat mitattavia menestyksen indikaattoreita (näkymät, sitoutuminen, vaikutus)
+Järjestelmä toimii näin:
 
-Ilman näitä ihmisten luomia esimerkkejä järjestelmä optimoisi sokeasti. Niiden avulla se voi oppia, mikä todella saa ihmiset toimimaan.
+```
+1. Ihminen kertoo mitä haluaa saavuttaa
+2. AI luo ensimmäisen version viestistä
+3. Ihminen lukee viestin
+4. Jos ihminen on tyytyväinen → mene kohtaan 8
+5. Jos ihminen ei ole tyytyväinen → anna palautetta
+6. AI luo uuden version palautteen pohjalta
+7. Palaa kohtaan 3
+8. Viesti on valmis ja julkaistaan
+```
 
-## Miksi abstraktiotasot ovat tärkeitä
+Lyhyesti: Ihminen ja AI työstävät viestiä yhdessä kierros kierrokselta, kunnes lopputulos on tyydyttävä. Jokainen kierros parantaa viestiä edelliseen verrattuna. Ihminen päättää milloin viesti on valmis.
 
-Monimutkaiset järjestelmät vaativat hierarkkista organisointia. Aivan kuten rakennus tarvitsee arkkitehtuurin, rakenteen, materiaalit ja yksityiskohdat, tehokas poliittinen viestintä vaatii useita suunnittelun ja toteutuksen tasoja:
 
-- **Ilman abstraktiota**: Kirjoittajat ylikuormittuvat yrittäessään jongleerata strategiaa, tyyliä, kielioppia ja sanavalintojai samanaikaisesti
-- **Abstraktion kanssa**: Jokaista tasoa voidaan optimoida itsenäisesti, selkeiden rajapintojen kanssa tasojen välillä
-- **Tulos**: Johdonmukaisempaa, tehokkaampaa ja skaalautuvampaa viestintää
 
-Abstraktiohierarkia mahdollistaa "mitä sanoa" erottamisen "miten sanoa" -kysymyksestä ja "mitä sanoja käyttää" -kysymyksestä—mahdollistaen systemaattisen parantamisen jokaisella tasolla.
+## Miten se toimii?
 
-## Miten tämä järjestelmä toimii
+### 1. Esimerkeistä oppiminen - järjestelmän perusta
+**TÄRKEÄÄ**: Järjestelmä tarvitsee ihmisten luomia esimerkkejä toimiakseen hyvin. 
 
-Tämä repositorio tarjoaa monitasoisen rajoitejärjestelmän, joka mahdollistaa AI-työkalujen (erityisesti Clauden) toimimisen kehittyneinä optimointimoottoreina poliittiselle viestinnälle. Määrittelemällä rajoitteita eri abstraktiotasoilla järjestelmä ohjaa erittäin kohdennetun ja tehokkaan poliittisen sisällön tuottamista.
+Oppimateriaali löytyy:
+- `tyyliesimerkit/` - Toimiviksi todistetut poliittiset viestit
+- `resurssit/oppaat/` - Viestintäoppaat ja teoriamateriaalit
 
-### Viisi abstraktiotasoa
+Ilman näitä esimerkkejä järjestelmä ei voi oppia:
+- Mitkä sanavalinnat toimivat suomalaisessa kontekstissa
+- Millainen rytmi ja rakenne vetoaa kohderyhmään
+- Mitkä argumentit vakuuttavat oikeasti
 
-#### Taso 1: Strategiset tavoitteet (Korkein abstraktio)
-**Tiedostot:** `CLAUDE_TAVOITE.md`
-- **Tarkoitus**: Määrittele mitä haluat saavuttaa
-- **Sisältö**: Kampanjatavoitteet, psykologiset matkamallit, strategiset sekvenssit
-- **Esimerkki**: "Muuta skeptikot kannattajiksi" tai "Mobilisoi kannattajakunta toimintaan"
+**Mitä enemmän laadukkaita esimerkkejä, sitä paremmin järjestelmä toimii.**
 
-#### Taso 2: Viestintätyylit
-**Tiedostot:** `CLAUDE_TYYLI.md`
-- **Tarkoitus**: Määrittele miten viestiä
-- **Sisältö**: 7 erillistä poliittisen viestinnän tyyliä ainutlaatuisine ominaisuuksineen
-- **Esimerkki**: Paasaustyyli kokoontumisiin, Analyyttinen tyyli intellektuellien suostutteluun
+Lähdemateriaalin ja käyttäjäpalautteen perusteella Claude luo uusia .md-tiedostoja, jotka toimivat lisäoppaina ja -sääntöinä.
 
-#### Taso 3: Retoriset rakenteet
-**Tiedostot:** `CLAUDE_RETORIIKKA.md`
-- **Tarkoitus**: Määrittele argumentaatiomallit
-- **Sisältö**: Todistustyypit, kehystysmenetelmät, narratiivikaaret
-- **Esimerkki**: Käytä emotionaalisia vetoomuksia 60%, loogisia argumentteja 40%
+### 2. Seitsemän erilaista tyyliä
+Eri tilanteet vaativat erilaista viestintää:
+- **Paasaustyyli** - Tunteellinen, käskevä, mobilisoiva
+- **Analyyttinen** - Strateginen, kouluttava, legitimoiva
+- **Konseptuaalinen** - Esittelee uusia ideoita ja viitekehyksiä
+- **Argumentoiva** - Looginen, kumoaa vastapuolen väitteitä
+- **Kriittis-poliittinen** - Kritisoi vastustajia, skandaalit
+- **Filosofis-uskonnollinen** - Arvot, merkitys, perinteet
+- **Populistinen** - Yksinkertaiset ratkaisut, taloudelliset vetoomukset
 
-#### Taso 4: Syntaktiset mallit
-**Tiedostot:** `CLAUDE_SYNTAKSI.md`
-- **Tarkoitus**: Määrittele lauserakenteet
-- **Sisältö**: Lausetyypit, pituudet, kieliopilliset mallit
-- **Esimerkki**: 40-60% imperatiivisia lauseita Paasaustyylissä
+### 3. Vaiheittainen hiominen
+Viestit luodaan vaiheittain:
+1. Ensimmäinen versio
+2. Palaute ja parannukset
+3. Hiottu lopputulos
 
-#### Taso 5: Leksikaaliset valinnat
-**Tiedostot:** `CLAUDE_SANASTO.md`
-- **Tarkoitus**: Määrittele sanavalinta
-- **Sisältö**: Sanasto, rekisterit, avainlauseet
-- **Esimerkki**: Käytä "sisu" ja muita kulttuurisia avainsanoja Paasaustyylissä
+## Käytännön esimerkki
+
+**Tavoite:** Haluat kritisoida energiapolitiikkaa
+
+**Prosessi:**
+1. Valitse tyyli (esim. populistinen)
+2. Järjestelmä luo ensimmäisen version
+3. Annat palautetta ("lisää konkretiaa")
+4. Saat hiotun version
+
+**Tulos:** Viesti, joka puhuttelee kohderyhmääsi tehokkaasti
 
 ## Repositorion rakenne
 
 ```
-├── postaukset/        # Yksittäiset taktiset viestit  
-├── puolueohjelmat/    # Lähdemateriaali ja kannat
-├── kehystys/          # Viestintätekniikat
-├── tyyliesimerkit/    # PERUSTA: Ihmisten luomat tehokkaat esimerkit
-└── CLAUDE_*.md        # Suunnitteluspesifikaatiot
+postaukset/        # Valmiit viestit aiheittain
+tyyliesimerkit/    # Toimiviksi todistetut esimerkit  
+resurssit/         # Apumateriaalit (fraasit, narratiivit, kehystys)
+  oppaat/          # PDF-oppaat ja teoriamateriaalit
+nyanssit/          # Hienovaraisten vivahteiden oppimateriaali
+puolueohjelmat/    # Eri puolueiden viralliset ohjelmat
+CLAUDE_*.md        # Järjestelmän yksityiskohtaiset ohjeet
 ```
-
-### Optimointivirta
-
-1. **Ihmisen syöte**: Onnistuneet esimerkit osoittavat mikä toimii
-2. **Mallien poiminta**: Järjestelmä analysoi esimerkkejä kielellisten mallien löytämiseksi
-3. **Rajoitteiden määrittely**: Malleista tulee mitattavia rajoitteita
-4. **Tavoitteen asettaminen**: Ihminen määrittelee halutun lopputuloksen
-5. **Optimointi**: Järjestelmä generoi sisältöä maksimoiden tavoitteen saavuttamisen
-6. **Ihmisen palaute**: Tulokset informoivat seuraavaa iteraatiota
 
 ## Aloittaminen
 
-1. **Määrittele tavoitteesi**: Minkä poliittisen tavoitteen haluat saavuttaa?
-2. **Konsultoi strategiaopasta**: `CLAUDE_TAVOITE.md` kartoittaa tavoitteesi kampanjarakenteeksi
-3. **Tarkastele saatavilla olevia tyylejä**: `CLAUDE_TYYLI.md` näyttää työkalupakin työkalut
-4. **Tutki esimerkkejä**: `tyyliesimerkit/`-kansio sisältää taistelussa testattua sisältöä
-5. **Luo iteratiivisesti**: Käytä A-B tiedostokuviota viestisi hiomiseen
-6. **Anna järjestelmän ohjata**: Jokainen abstraktiotaso tarjoaa erityisiä rajoitteita
+1. **Määrittele tavoite** - Mitä haluat saavuttaa?
+2. **Valitse tyyli** - Mikä sopii tilanteeseen?
+3. **Luo ensimmäinen versio** - Järjestelmä auttaa
+4. **Hio vaiheittain** - Paranna palautteen perusteella
 
-## Keskeinen innovaatio
+## Järjestelmän vahvuudet
 
-Tämä järjestelmä muuttaa poliittisen viestinnän intuitiivisesta taiteesta systemaattiseksi suunnitteluksi:
-- Hajottamalla monimutkaisuuden hallittaviksi tasoiksi
-- Tarjoamalla mitattavia rajoitteita jokaisella tasolla
-- Mahdollistamalla systemaattisen optimoinnin
-- Luomalla toistettavia tuloksia
-- Sallimalla jatkuvan parantamisen iteraation kautta
+✅ **Toimii hyvin:**
+- Yksittäisten viestien luominen
+- Eri tyylien hallinta
+- Sanavalintojen optimointi
+- Argumenttien rakentaminen
 
-## Järjestelmän rajoitukset
+❌ **Rajoitukset:**
+- Pitkät kampanjat vaativat ihmisohjausta
+- Johdonmukaisuus useiden viestien välillä on haastavaa
 
-### Kampanjaluomisen haasteet
+## Miksi tämä on tärkeää?
 
-Vaikka tämä järjestelmä loistaa yksittäisten postausten luomisessa erityisillä tyyleillä, Claudella on osoitettu rajoituksia täysien monivaiheisten kampanjoiden luomisessa:
+Poliittinen viestintä ei ole enää pelkkää intuitiota. Ymmärtämällä miten kieli vaikuttaa ajatteluun, voimme:
+- Luoda tehokkaampia viestejä
+- Tavoittaa ihmiset paremmin
+- Edistää poliittisia tavoitteita
 
-- **Lähteiden eheys**: Kampanjoita luotaessa Claude saattaa esittää lähteitä väärin, viitaten tutkimukseen, joka itse asiassa argumentoi kampanjan kantaa vastaan
-- **Johdonmukaisuus**: Yhtenäisen poliittisen kannan ylläpitäminen useiden postausten ja vaiheiden yli osoittautuu haasteelliseksi
-- **Psykologinen yhtenäisyys**: 5-vaiheinen matkamalli (HERÄTÄ → KIIHDYTÄ → KOULUTA → AKTIVOI → INTEGROI) vaatii hienovaraista psykologista etenemistä, joka ylittää nykyiset kyvyt
+## Tekninen toteutus
 
-### Suositeltu lähestymistapa
+Järjestelmä käyttää Claude AI:ta apuna viestien luomisessa. 
 
-Parhaisiin tuloksiin:
-- Keskity luomaan voimakkaita yksittäisiä postauksia käyttäen 7 viestintätyyliä
-- Käytä tyylinvalintaoppaita (CLAUDE_TAVOITE.md) valitaksesi tehokkaimman lähestymistavan
-- Hyödynnä rajoitejärjestelmää yksittäisille viesteille monimutkaisten kampanjoiden sijaan
-- Harkitse ihmisvetoista kampanjasuunnittelua AI-avusteisella yksittäisten postausten luomisella
+Keskeiset ohjeet:
+- **CLAUDE.md** - Järjestelmän yleiskuvaus ja työnkulku
+- **CLAUDE_TYYLI.md** - 7 erilaista kirjoitustyyliä
+- **CLAUDE_POSTAUS.md** - Yksittäisten postausten kirjoitusopas
+- **CLAUDE_TAVOITE.md** - Opas oikean tyylin valintaan
+- **CLAUDE_SYNTAKSI.md**, **CLAUDE_RETORIIKKA.md**, **CLAUDE_SANASTO.md** - Hienojakoiset rajoitteet
 
-Järjestelmä pysyy erittäin tehokkaana ydintarkoituksessaan: yksittäisten poliittisen viestinnän osien suunnittelussa ennennäkemättömällä tarkkuudella ja vaikutuksella.
-
-## Kieli
-
-- Suomi varsinaiselle poliittiselle sisällölle
-- Englanti järjestelmädokumentaatioon tarvittaessa
-- Esimerkit sisältävät molempia kieliä maksimaalisen oppimisen vuoksi
+**Huom:** Järjestelmän käyttö vaatii Claude Coden.
 
 ---
 
-*Tämä repositorio edustaa uutta lähestymistapaa poliittiseen viestintään—sellaista, joka yhdistää ihmisen luovuuden systemaattiseen optimointiin saavuttaakseen ennennäkemätöntä tehokkuutta digitaalisella aikakaudella.*
+*Tämä työkalu yhdistää ihmisen luovuuden ja koneen tehokkuuden luodakseen vaikuttavaa poliittista viestintää.*
