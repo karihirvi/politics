@@ -4,10 +4,11 @@ Tämä dokumentti opastaa järjestelmän käytössä Claude Coden kanssa.
 
 ## Pikaopas
 
-1. **Luo postaus:** `luo postaus aiheesta X tyylillä Y`
-2. **Käsittele:** `käsittele` (prosessoi A-tiedoston)
-3. **Iteroi:** Kirjoita palaute A-tiedostoon → `käsittele`
-4. **Opi:** `analysoi mikä toimi`
+1. **Lataa ohjeet muistiin:** `lue muistiin` tai `lataa ohjeet`
+2. **Luo postaus:** `luo postaus aiheesta X tyylillä Y`
+3. **Käsittele:** `käsittele` tai `käsittely` (prosessoi A-tiedoston)
+4. **Iteroi:** Kirjoita palaute A-tiedostoon → `käsittele`
+5. **Opi:** `analysoi mikä toimi`
 
 **A-B tiedostot:**
 - **A** = Käyttäjän kirjoittamat pyynnöt ja palautteet
@@ -23,6 +24,14 @@ Tämä dokumentti opastaa järjestelmän käytössä Claude Coden kanssa.
 5. [Viestintä Clauden kanssa](#5-viestintä-clauden-kanssa)
 
 ## 1. Postauksen luominen ja iterointi
+
+### Ennen aloittamista
+
+**TÄRKEÄÄ: Lataa ohjeet muistiin**
+```
+lue muistiin
+```
+Claude lukee kaikki CLAUDE_*.md tiedostot kontekstiinsa ja vahvistaa: "Ohjeet luettu muistiin. Valmis luomaan postauksia."
 
 ### Uuden postauksen aloittaminen
 
@@ -54,7 +63,9 @@ Keskeiset kohdat:
 ```
 käsittele
 ```
-Claude luo vastauksen B-tiedostoon (esim. `p004-01-b-burkakielto-populistinen.md`) ja automaattisesti seuraavan palautemallin.
+Claude:
+1. Luo vastauksen B-tiedostoon (esim. `p004-01-b-burkakielto-populistinen.md`)
+2. Luo AUTOMAATTISESTI seuraavan iteraation palautepohjan (esim. `p004-02-a-palaute.md`)
 
 ### Postauksen iterointi
 
@@ -292,6 +303,7 @@ Hyvä yritys, mutta haen enemmän e011-halpa-energia.txt kaltaista konkreettista
 ## Muistilista aloittelijalle
 
 - [ ] Lue ensin README.md ymmärtääksesi järjestelmän
+- [ ] Lataa ohjeet muistiin komennolla `lue muistiin`
 - [ ] Tutustu tyyliesimerkit-kansioon
 - [ ] Kokeile luoda ensimmäinen postaus
 - [ ] Harjoittele antamaan palautetta ja iteroimaan

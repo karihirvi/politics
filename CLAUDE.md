@@ -55,14 +55,31 @@ ERITTÄIN TÄRKEÄÄ:
 
 ### Sisällöntuotannon ohjeistus
 
+#### TÄRKEÄÄ: Ennen postausten tekemistä
+
+**Kun käyttäjä sanoo "lue muistiin" tai "lataa ohjeet":**
+- Lue KAIKKI seuraavat CLAUDE_*.md tiedostot kontekstiisi tässä järjestyksessä:
+  1. CLAUDE_TYYLI.md - 7 tyylin määrittelyt
+  2. CLAUDE_POSTAUS.md - Käytännön kirjoitusohjeet  
+  3. CLAUDE_TAVOITE.md - Tyylin valintaopas
+  4. CLAUDE_RETORIIKKA.md - Argumentaatiorakenteet
+  5. CLAUDE_SYNTAKSI.md - Kieliopilliset rajoitteet
+  6. CLAUDE_SANASTO.md - Sanastolliset rajoitteet
+  7. CLAUDE_NYANSSIT.md - Hienovaraiset vivahteet
+- Lue KAIKKI tiedostot, ei vain "tarvittaessa"
+- Vahvista käyttäjälle: "Ohjeet luettu muistiin. Valmis luomaan postauksia."
+- Tämä varmistaa, että kaikki tyyliohjeet ja rajoitteet ovat käytössä
+
 1. **Uutta postausta luotaessa**
    - Luo automaattisesti ensimmäinen pyyntömalli: `p###-01-a-pyyntö.md`
    - Käytä vakiomallia osioilla Tavoite, Tyyli, Pituus, Keskeiset kohdat, jne.
+   - **TÄRKEÄÄ**: ÄLÄ generoi vastausta automaattisesti - odota käyttäjän "käsittele" komentoa
    - Tämä säästää käyttäjän aikaa ja varmistaa yhtenäisen rakenteen
 
-2. **Kun käyttäjä sanoo "käsittele"**
-   - Käsittele pyyntötiedosto generoidaksesi vastauksen
-   - **TÄRKEÄÄ**: Luo automaattisesti seuraava palautemalli vastauksen generoinnin jälkeen
+2. **Kun käyttäjä sanoo "käsittele" tai "käsittely"**
+   - Käsittele pyyntötiedosto generoidaksesi vastauksen (b-tiedosto)
+   - **TÄRKEÄÄ**: Luo AINA automaattisesti seuraava palautemalli (02-a, 03-a, jne.) vastauksen generoinnin jälkeen
+   - Palautepohja sisältää: Mikä toimi hyvin, Mitä voisi parantaa, Konkreettiset muutosehdotukset, Sävyn säätö, Pituus
    - Tämä varmistaa sujuvan iteraatiotyökulun
 
 3. **Kun käyttäjä antaa muita ohjeita**
@@ -198,6 +215,7 @@ Opettaa Claudelle tekstin hienovaraisia vivahteita ja "kulmia":
 - Englantia käytetään käyttäjän ohjeisiin ja muihin ohjeistuksiin tarvittaessa
 - ÄLÄ KOSKAAN käytä hashtageja postauksissa
 - Postausten pituusohjeistukseen viittaa tyyliesimerkit tyypillisille pituuksille
+- **TÄRKEÄ OIKEINKIRJOITUS**: Käytä aina "burka", EI "burkka" (yksi k, ei kaksi)
 
 ## Lähde- ja viittausohjeistus
 - **KAIKKI viittaukset tulee olla URL-osoitteita**: Älä koskaan käytä epämääräisiä viittauksia kuten "Tutkimus osoittaa" tai "Raportti sanoo"
