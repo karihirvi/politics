@@ -4,6 +4,8 @@
 
 Tämä dokumentti tarjoaa Claudelle yksityiskohtaiset ohjeet tehokkaiden yksittäisten sosiaalisen median postausten luomiseen suomalaisessa poliittisessa kontekstissa. Se täydentää CLAUDE_TYYLI.md ja CLAUDE_TAVOITE.md dokumentteja keskittyen erityisesti yhden postauksen kirjoittamisen tekniikoihin.
 
+**HUOM:** Postausten luomiseen suositellaan käyttämään **postausmoodia** - katso CLAUDE_POSTAUSMOODI.md interaktiivisen prosessin ohjeille. Tämä dokumentti keskittyy itse postauksen kirjoittamisen tekniikoihin.
+
 ## Postauksen pituuden vaihtelu
 
 ### KRIITTINEN: Vaihtele pituuksia merkittävästi
@@ -284,8 +286,14 @@ Opetus: Populistinen tyyli toimii parhaiten keskipitkänä, konkreettisena ja to
 
 ## Käyttöohjeet Claudelle
 
-Kun käyttäjä pyytää yksittäistä postausta:
-1. Kysy tarvittaessa: Aihe, tyyli, tavoite
+### Postausmoodissa (SUOSITELTU):
+1. Käytä interaktiivista dialogia pyynnön kehittämiseen
+2. Tallenna versioita `sync`-komennolla
+3. Generoi postaus `käsittele`-komennolla
+4. Katso CLAUDE_POSTAUSMOODI.md yksityiskohdille
+
+### Postauksen kirjoittamisessa:
+1. Lue pyyntö ylimmästä SYNC-osiosta (postausmoodissa)
 2. Tarkista edellisten postausten pituudet
 3. Valitse MERKITTÄVÄSTI eri pituus
 4. Noudata valitun tyylin erityispiirteitä

@@ -7,6 +7,53 @@ näkemyksiä eri poliittisen viestinnän, psykologian ja kulttuuritutkimuksen as
 ## Päätavoite
 Tuottaa iteratiivisesti tekstuaalista sosiaalisen median sisältöä, joka resonoi suomalaisten äänestäjien kanssa.
 
+## Postausmoodi - Interaktiivinen sisällöntuotanto
+
+### Aktivointi ja käyttö
+```
+Käyttäjä: postausmoodi
+Claude: Postausmoodi aktivoitu.
+
+KOMENNOT:
+• uusi [aihe]    - Aloita uusi postaus interaktiivisella dialogilla
+• sync           - Tallenna nykyinen versio (voi tehdä useita kertoja)
+• käsittele      - Generoi postaus/korjaus ylimmän syncin pohjalta
+• palaute        - Aloita interaktiivinen palautesessio
+• status         - Näytä nykyinen tila ja historia
+• listaa         - Listaa kaikki postaukset repositoriossa
+• poistu         - Poistu postausmoodista
+
+LISÄKOMENNOT DIALOGISSA:
+• dialogi        - Aloita vapaa dialogi kesken pyynnön
+• lopeta         - Lopeta dialogi, palaa perustilaaan
+• valitse [num]  - Valitse vaihtoehto listasta
+• lisää          - Pyydä lisää vaihtoehtoja
+
+Käytä 'uusi [aihe]' aloittaaksesi postauksen luomisen.
+```
+
+Postausmoodi on interaktiivinen toimintatila, jossa Claude ohjaa käyttäjää postausten luomisessa dialogin kautta. Kaikki päätökset dokumentoidaan automaattisesti.
+
+### Peruskomennot
+- `postausmoodi` - Aktivoi postausmoodin
+- `uusi [aihe]` - Aloita uusi postaus interaktiivisella dialogilla
+- `sync` - Tallenna nykyinen versio (voi tehdä useita kertoja)
+- `käsittele` - Generoi postaus/korjaus ylimmän syncin pohjalta
+- `palaute` - Aloita interaktiivinen palautesessio
+- `status` - Näytä nykyinen tila
+- `listaa` - Listaa kaikki postaukset
+- `poistu` - Poistu postausmoodista
+
+### Työnkulku postausmoodissa
+1. **Aktivoi moodi**: `postausmoodi`
+2. **Luo pyyntö dialogilla**: `uusi [aihe]`, vastaa kysymyksiin, `sync`
+3. **Generoi postaus**: `käsittele`
+4. **Anna palautetta dialogilla**: `palaute`, keskustele, `sync`
+5. **Generoi korjaus**: `käsittele`
+6. **Toista tarvittaessa**
+
+**TÄRKEÄÄ**: Yksityiskohtaiset ohjeet postausmoodista löytyvät tiedostosta **CLAUDE_POSTAUSMOODI.md**
+
 ## Sisällöntuotantoprosessi
 
 Järjestelmä luo tehokkaita yksittäisiä postauksia sosiaaliseen mediaan:
@@ -20,8 +67,10 @@ Järjestelmä luo tehokkaita yksittäisiä postauksia sosiaaliseen mediaan:
 
 **Tiedostorakenne:**
 - Seuraa A-B iteraatiokuviota:
-  - **A-tiedostot**: Käyttäjän ohjeet (esim. `p001-01-a-ohjeet.md`)
-  - **B-tiedostot**: Clauden vastaus (esim. `p001-01-b-vastaus.md`)
+  - **A-tiedostot**: Interaktiivisesti luodut pyynnöt/palautteet (esim. `p001-01-a-pyyntö.md`)
+    - Sisältää useita SYNC-versioita (ylin on voimassa)
+    - Dialogi-historia dokumentoituna
+  - **B-tiedostot**: Clauden generoimat postaukset (esim. `p001-01-b-vastaus.md`)
 - Jatka 02-a, 02-b hienosäätöjä varten
 
 **Esimerkkigerakenne:**
@@ -59,93 +108,92 @@ ERITTÄIN TÄRKEÄÄ:
 
 **Kun käyttäjä sanoo "lue muistiin" tai "lataa ohjeet":**
 - Lue KAIKKI seuraavat CLAUDE_*.md tiedostot kontekstiisi tässä järjestyksessä:
-  1. CLAUDE_TYYLI.md - 7 tyylin määrittelyt
-  2. CLAUDE_POSTAUS.md - Käytännön kirjoitusohjeet  
-  3. CLAUDE_TAVOITE.md - Tyylin valintaopas
-  4. CLAUDE_RETORIIKKA.md - Argumentaatiorakenteet
-  5. CLAUDE_SYNTAKSI.md - Kieliopilliset rajoitteet
-  6. CLAUDE_SANASTO.md - Sanastolliset rajoitteet
-  7. CLAUDE_NYANSSIT.md - Hienovaraiset vivahteet
+  1. CLAUDE_POSTAUSMOODI.md - Postausmoodin käyttö
+  2. CLAUDE_TYYLI.md - 7 tyylin määrittelyt
+  3. CLAUDE_POSTAUS.md - Käytännön kirjoitusohjeet  
+  4. CLAUDE_TAVOITE.md - Tyylin valintaopas
+  5. CLAUDE_RETORIIKKA.md - Argumentaatiorakenteet
+  6. CLAUDE_SYNTAKSI.md - Kieliopilliset rajoitteet
+  7. CLAUDE_SANASTO.md - Sanastolliset rajoitteet
+  8. CLAUDE_NYANSSIT.md - Hienovaraiset vivahteet
 - Lue KAIKKI tiedostot, ei vain "tarvittaessa"
 - Vahvista käyttäjälle: "Ohjeet luettu muistiin. Valmis luomaan postauksia."
 - Tämä varmistaa, että kaikki tyyliohjeet ja rajoitteet ovat käytössä
 
-1. **Uutta postausta luotaessa**
-   - Luo automaattisesti ensimmäinen pyyntömalli: `p###-01-a-pyyntö.md`
-   - Käytä vakiomallia osioilla Tavoite, Tyyli, Pituus, Keskeiset kohdat, jne.
-   - **TÄRKEÄÄ**: ÄLÄ generoi vastausta automaattisesti - odota käyttäjän "käsittele" komentoa
-   - Tämä säästää käyttäjän aikaa ja varmistaa yhtenäisen rakenteen
+1. **Postausmoodin käyttö (SUOSITELTU)**
+   - Aktivoi postausmoodi: `postausmoodi`
+   - Aloita uusi postaus: `uusi [aihe]`
+   - Claude ohjaa interaktiivisesti pyynnön luomisessa
+   - Tallenna versioita: `sync` (voi tehdä useita kertoja)
+   - Generoi postaus: `käsittele`
+   - Anna palautetta interaktiivisesti: `palaute`
+   - Katso yksityiskohtaiset ohjeet: CLAUDE_POSTAUSMOODI.md
 
-2. **Kun käyttäjä sanoo "käsittele" tai "käsittely"**
-   - Käsittele pyyntötiedosto generoidaksesi vastauksen (b-tiedosto)
-   - **TÄRKEÄÄ**: Luo AINA automaattisesti seuraava palautemalli (02-a, 03-a, jne.) vastauksen generoinnin jälkeen
-   - Palautepohja sisältää: Mikä toimi hyvin, Mitä voisi parantaa, Konkreettiset muutosehdotukset, Sävyn säätö, Pituus
-   - Tämä varmistaa sujuvan iteraatiotyökulun
+2. **Kun käyttäjä sanoo "käsittele"**
+   - Lue ylimmän SYNC-osion a-tiedostosta
+   - Generoi postaus b-tiedostoon
+   - Postausmoodissa: valmistaudu automaattisesti palautesesioon
 
-3. **Kun käyttäjä antaa muita ohjeita**
-   - Jos rajoitteet ovat epäselviä, pyydä tarkennusta
-   - Jos on useita päteviä tulkintoja, tarjoa useita vaihtoehtoja
-   - Viittaa taustamateriaaleihin ohjeiden mukaan (puolueohjelmat, kehystystekniikat, tyylesimerkit)
-
-4. **Vastausmuoto**
-   - Useille vaihtoehdoille: Luo kaikki variaatiot yhteen B-tiedostoon, selvästi eroteltuina
-   - Käytä kuvaavia otsikoita jokaiselle versiolle
-   - Pidä suomenkielinen teksti erillään ohjeista/kommenteista
-
-5. **Palautteen käsittely**
+3. **Palautteen käsittely**
+   - Postausmoodissa: Käytä `palaute` komentoa interaktiiviseen palautesesioon
    - **KRIITTINEN**: Kun käyttäjä antaa palautetta mistä tahansa osasta, sovella sitä globaalisti
    - Jos käyttäjä korjaa kirjoitusasun (esim. "burkkaa" → "burkaa"), korjaa se kaikkialla
    - Jos käyttäjä ehdottaa sävyn muutosta yhdessä postauksessa, harkitse koskeeko se muita
    - Jos käyttäjä mainitsee puuttuvan kontekstin, lisää konteksti KAIKKIIN postauksiin, ei vain kommentoituun
    - Ajattele aina: "Koskeeko tämä palaute muualle?"
 
-### Työnkulkuesimerkki
+### Työnkulkuesimerkki postausmoodissa
 
-**Vaihe 1: Käyttäjä luo pyyntötiedoston**
+**Vaihe 1: Interaktiivinen pyynnön luominen**
 ```
-postaukset/p002-tuulivoimakritiikki/p002-01-a-pyyntö.md:
+Käyttäjä: postausmoodi
+Claude: Postausmoodi aktivoitu. Komennot: uusi, käsittele, palaute, sync, status, listaa, poistu
 
-# Pyyntö: Tuulivoimakritiikin postaus
+Käyttäjä: uusi tuulivoimakritiikki
+Claude: Aloitetaan p002-tuulivoimakritiikki. Mikä on postauksen tavoite?
+Käyttäjä: paljastaa tuulivoimatukien piilotetut kustannukset
+Claude: Hyvä! Millainen tyyli - kriittinen, analyyttinen, populistinen?
+Käyttäjä: analyyttinen, haluan faktoja
+Claude: Selvä. Pituus - lyhyt, keskipitkä vai pitkä?
+Käyttäjä: keskipitkä
+Käyttäjä: sync
 
-Tavoite: Paljastaa tuulivoimatukien piilotetut kustannukset
-Tyyli: Analyyttinen - haluan rakentaa uskottavuutta faktoilla
-Pituus: KESKIPITKÄ (5-6 kappaletta)
-Keskeiset kohdat:
-- Veronmaksajien taakka
-- Tuulivoiman epäluotettavuus
-- Vaikutus sähkön hintaan
+[Claude tallentaa SYNC 1 tiedostoon p002-01-a-pyyntö.md]
 
-Sisällytä uskottavia lähteitä (muista: ei Wikipediaa)
-```
+Käyttäjä: lisää vielä vertailu ydinvoimaan
+Claude: Lisätään vertailu. Muita keskeisiä kohtia?
+Käyttäjä: veronmaksajien taakka, epäluotettavuus
+Käyttäjä: sync
 
-**Vaihe 2: Claude generoi vastauksen**
-```
-postaukset/p002-tuulivoimakritiikki/p002-01-b-tuulivoiman-todelliset-kustannukset.md:
-
-# Tuulivoiman todelliset kustannukset paljastuvat
-
-[Analyyttisen tyylin postaus 5-6 kappaleella, faktoja, lähteitä...]
-
-Lähteet:
-1. Energiavirasto (2023): https://energiavirasto.fi/...
-2. VTT:n tutkimus (2024): https://www.vtt.fi/...
+[Claude päivittää SYNC 2 tiedostoon p002-01-a-pyyntö.md]
 ```
 
-**Vaihe 3: Käyttäjä antaa palautetta**
+**Vaihe 2: Postauksen generointi**
 ```
-postaukset/p002-tuulivoimakritiikki/p002-02-a-palaute.md:
-
-Hyvä alku, mutta:
-- Lisää emotionaalinen koukku alkuun
-- Sisällytä vertailu ydinvoiman kustannuksiin
-- Sävy on liian akateeminen, tee siitä helpommin lähestyttävä
+Käyttäjä: käsittele
+Claude: Generoin postauksen SYNC 2 pohjalta...
+[Claude luo p002-01-b-tuulivoiman-todelliset-kustannukset.md]
 ```
 
-**Vaihe 4: Claude luo hienosäädetyn version**
+**Vaihe 3: Interaktiivinen palaute**
 ```
-postaukset/p002-tuulivoimakritiikki/p002-02-b-tuulivoiman-piilotetut-kulut.md:
+Käyttäjä: palaute
+Claude: Aloitetaan palautesessio. Mikä toimi hyvin?
+Käyttäjä: faktat ja lähteet ovat hyviä
+Claude: Entä parannettavaa?
+Käyttäjä: liian akateeminen sävy
+Claude: Miten muuttaisit sävyä?
+Käyttäjä: lisää emotionaalinen koukku alkuun
+Käyttäjä: sync
 
-[Hienosäädetty versio, joka sisältää kaiken palautteen]
+[Claude tallentaa palautteen p002-02-a-palaute.md]
+```
+
+**Vaihe 4: Korjatun version generointi**
+```
+Käyttäjä: käsittele
+Claude: Generoin korjatun version palautteen pohjalta...
+[Claude luo p002-02-b-tuulivoiman-piilotetut-kulut.md]
 ```
 
 ## Taustatiedot
