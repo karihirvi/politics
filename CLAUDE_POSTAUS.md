@@ -4,7 +4,23 @@
 
 Tämä dokumentti tarjoaa Claudelle yksityiskohtaiset ohjeet tehokkaiden yksittäisten sosiaalisen median postausten luomiseen suomalaisessa poliittisessa kontekstissa. Se täydentää CLAUDE_TYYLI.md ja CLAUDE_TAVOITE.md dokumentteja keskittyen erityisesti yhden postauksen kirjoittamisen tekniikoihin.
 
-**HUOM:** Postausten luomiseen suositellaan käyttämään **postausmoodia** - katso CLAUDE_POSTAUSMOODI.md interaktiivisen prosessin ohjeille. Tämä dokumentti keskittyy itse postauksen kirjoittamisen tekniikoihin.
+## Sisällöntuotannon periaatteet (p004-analyysin pohjalta)
+
+### Mikä toimii sosiaalisessa mediassa:
+1. **Konkreettinen aloitus** - #metoo, uutinen, tunnistettava tilanne
+2. **Arkikieli voittaa jargonin** - "kangaspussi" > "identiteetin pyyhkiminen"
+3. **Selkeä kontrasti** - "taistelevat X mutta hyväksyvät Y"
+4. **Tunneyhteys** - "tyttäremme", "lapsesi luokkakaveri"
+5. **Iskevä lopetus** - "Valinta on sinun"
+
+### Vältä näitä:
+- Akateeminen jargon (intersektionaalisuus, paradigma)
+- Keinotekoiset termit (uhriluokkahierarkia)
+- Monimutkaiset rakenteet (pyramidit, hierarkiat)
+- Englanninkieliset sanat (equity, LGBTQ+)
+- Abstraktit teoriat ilman konkretiaa
+
+**Ydinopetus**: Voima tulee konkretiasta, tunteista ja selkeydestä - ei käsitteistä.
 
 ## Postauksen pituuden vaihtelu
 
@@ -286,22 +302,17 @@ Opetus: Populistinen tyyli toimii parhaiten keskipitkänä, konkreettisena ja to
 
 ## Käyttöohjeet Claudelle
 
-### Postausmoodissa (SUOSITELTU):
-1. Käytä interaktiivista dialogia pyynnön kehittämiseen
-2. Tallenna versioita `sync`-komennolla
-3. Generoi postaus `käsittele`-komennolla
-4. Katso CLAUDE_POSTAUSMOODI.md yksityiskohdille
-
 ### Postauksen kirjoittamisessa:
-1. Lue pyyntö ylimmästä SYNC-osiosta (postausmoodissa)
+1. Lue käyttäjän pyyntö a-tiedostosta
 2. Tarkista edellisten postausten pituudet
 3. Valitse MERKITTÄVÄSTI eri pituus
 4. Noudata valitun tyylin erityispiirteitä
 5. Valitse 2-3 retorista tekniikkaa (retoriset-tekniikat.md)
 6. Päätä vahvuustaso (mieto/vahva-kansa/vahva-akateeminen)
 7. Käytä vähintään 2 erityistekniikkaa
-8. Tarkista tarkistuslista
-9. ÄLÄ lisää hashtageja
+8. Sovella p004-periaatteita (konkretiaa, tunnetta, selkeyttä)
+9. Tarkista tarkistuslista
+10. ÄLÄ lisää hashtageja
 
 Muista: Vaihtelu on avain. Älä koskaan tee kahta samanlaista postausta peräkkäin.
 

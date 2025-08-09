@@ -7,53 +7,6 @@ näkemyksiä eri poliittisen viestinnän, psykologian ja kulttuuritutkimuksen as
 ## Päätavoite
 Tuottaa iteratiivisesti tekstuaalista sosiaalisen median sisältöä, joka resonoi suomalaisten äänestäjien kanssa.
 
-## Postausmoodi - Interaktiivinen sisällöntuotanto
-
-### Aktivointi ja käyttö
-```
-Käyttäjä: postausmoodi
-Claude: Postausmoodi aktivoitu.
-
-KOMENNOT:
-• uusi [aihe]    - Aloita uusi postaus interaktiivisella dialogilla
-• sync           - Tallenna nykyinen versio (voi tehdä useita kertoja)
-• käsittele      - Generoi postaus/korjaus ylimmän syncin pohjalta
-• palaute        - Aloita interaktiivinen palautesessio
-• status         - Näytä nykyinen tila ja historia
-• listaa         - Listaa kaikki postaukset repositoriossa
-• poistu         - Poistu postausmoodista
-
-LISÄKOMENNOT DIALOGISSA:
-• dialogi        - Aloita vapaa dialogi kesken pyynnön
-• lopeta         - Lopeta dialogi, palaa perustilaaan
-• valitse [num]  - Valitse vaihtoehto listasta
-• lisää          - Pyydä lisää vaihtoehtoja
-
-Käytä 'uusi [aihe]' aloittaaksesi postauksen luomisen.
-```
-
-Postausmoodi on interaktiivinen toimintatila, jossa Claude ohjaa käyttäjää postausten luomisessa dialogin kautta. Kaikki päätökset dokumentoidaan automaattisesti.
-
-### Peruskomennot
-- `postausmoodi` - Aktivoi postausmoodin
-- `uusi [aihe]` - Aloita uusi postaus interaktiivisella dialogilla
-- `sync` - Tallenna nykyinen versio (voi tehdä useita kertoja)
-- `käsittele` - Generoi postaus/korjaus ylimmän syncin pohjalta
-- `palaute` - Aloita interaktiivinen palautesessio
-- `status` - Näytä nykyinen tila
-- `listaa` - Listaa kaikki postaukset
-- `poistu` - Poistu postausmoodista
-
-### Työnkulku postausmoodissa
-1. **Aktivoi moodi**: `postausmoodi`
-2. **Luo pyyntö dialogilla**: `uusi [aihe]`, vastaa kysymyksiin, `sync`
-3. **Generoi postaus**: `käsittele`
-4. **Anna palautetta dialogilla**: `palaute`, keskustele, `sync`
-5. **Generoi korjaus**: `käsittele`
-6. **Toista tarvittaessa**
-
-**TÄRKEÄÄ**: Yksityiskohtaiset ohjeet postausmoodista löytyvät tiedostosta **CLAUDE_POSTAUSMOODI.md**
-
 ## Sisällöntuotantoprosessi
 
 Järjestelmä luo tehokkaita yksittäisiä postauksia sosiaaliseen mediaan:
@@ -67,9 +20,10 @@ Järjestelmä luo tehokkaita yksittäisiä postauksia sosiaaliseen mediaan:
 
 **Tiedostorakenne:**
 - Seuraa A-B iteraatiokuviota:
-  - **A-tiedostot**: Interaktiivisesti luodut pyynnöt/palautteet (esim. `p001-01-a-pyyntö.md`)
-    - Sisältää useita SYNC-versioita (ylin on voimassa)
-    - Dialogi-historia dokumentoituna
+  - **A-tiedostot**: Käyttäjän pyynnöt ja palautteet (esim. `p001-01-a-pyyntö.md`)
+    - Sisältää tavoitteet, rajoitteet ja raakatekstin
+    - Tyyli, pituus, sävy
+    - Ydinviestit ja konkreettiset esimerkit
   - **B-tiedostot**: Clauden generoimat postaukset (esim. `p001-01-b-vastaus.md`)
 - Jatka 02-a, 02-b hienosäätöjä varten
 
@@ -102,106 +56,130 @@ ERITTÄIN TÄRKEÄÄ:
   - Esim. jos sekä p001-01-b että p001-02-b ovat olemassa, käytä p001-02-b
   - Käyttäjä mainitsee erikseen mahdolliset poikkeukset tähän sääntöön
 
-### Sisällöntuotannon ohjeistus
+### Sisällöntuotannon prosessi
+
+#### 1. Pyynnön luominen (käyttäjä)
+
+Käyttäjä luo a-tiedoston, joka sisältää:
+- **Tavoitteet ja rajoitteet** - mitä halutaan saavuttaa
+- **Tyyli ja pituus** - valittu tyyli 7:stä vaihtoehdosta
+- **Raakateksti/ydinviestit** - mitä halutaan sanoa
+- **Konkreettiset esimerkit** - tunnistettavia tilanteita
+
+**SUOSITUS**: Käytä valmista pyyntöpohjaa `resurssit/tyokalut/pyyntopohja-malli.md`
+- Pohja huomioi kaikki CLAUDE_*.md ohjeissa määritellyt elementit
+- Sisältää valintaruudut, kehystämisen, retoriset tekniikat
+- Ohjaa automaattisesti p004-periaatteisiin (konkretiaa, tunnetta)
+
+Esimerkki (yksinkertainen pyyntö):
+```markdown
+# Pyyntö: [Aihe]
+
+## Tavoite
+Paljastaa ristiriita X:n ja Y:n välillä
+
+## Tyyli
+Kriittis-poliittinen, maltillinen sävy
+
+## Pituus
+KESKIPITKÄ (5-6 kappaletta)
+
+## Ydinviestit
+- Feministit vastustavat länsimaista seksismiä
+- Samat tahot vaikenevat burkasta
+- Tämä on kaksinaismoralismia
+
+## Konkreettiset esimerkit
+- #metoo-liike
+- Bikinimainos vs burka
+- Työpaikkaseksismi
+```
+
+#### 2. Postauksen generointi (Claude)
+
+Claude:
+1. Lukee a-tiedoston pyynnön
+2. Muotoilee raakatekstin tehokkaaksi postaukseksi
+3. Säilyttää käyttäjän ydinviestit
+4. Lisää retorista voimaa ja tunnetta
+5. Pitää kielen yksinkertaisena ja iskevänä
+6. Luo b-tiedoston
+
+#### 3. Palautteen käsittely
+
+Käyttäjä antaa palautetta normaalisti (ei komentoja):
+- "Liian pitkä, tiivistä 40%"
+- "Vaihda tämä esimerkki parempaan"
+- "Lisää konkretiaa tähän kohtaan"
+
+Claude soveltaa palautetta globaalisti:
+- Jos käyttäjä korjaa kirjoitusasun, korjaa kaikkialla
+- Jos sävy muuttuu, harkitse koskeeko muita kohtia
+- Ajattele: "Koskeeko tämä palaute muualle?"
 
 #### TÄRKEÄÄ: Ennen postausten tekemistä
 
 **Kun käyttäjä sanoo "lue muistiin" tai "lataa ohjeet":**
 - Lue KAIKKI seuraavat CLAUDE_*.md tiedostot kontekstiisi tässä järjestyksessä:
-  1. CLAUDE_POSTAUSMOODI.md - Postausmoodin käyttö
+  1. CLAUDE_NYANSSIT.md - Analyysit mikä toimii (erityisesti p004-vs-p005)
   2. CLAUDE_TYYLI.md - 7 tyylin määrittelyt
   3. CLAUDE_POSTAUS.md - Käytännön kirjoitusohjeet  
   4. CLAUDE_TAVOITE.md - Tyylin valintaopas
   5. CLAUDE_RETORIIKKA.md - Argumentaatiorakenteet
   6. CLAUDE_SYNTAKSI.md - Kieliopilliset rajoitteet
   7. CLAUDE_SANASTO.md - Sanastolliset rajoitteet
-  8. CLAUDE_NYANSSIT.md - Hienovaraiset vivahteet
 - Lue KAIKKI tiedostot, ei vain "tarvittaessa"
 - Vahvista käyttäjälle: "Ohjeet luettu muistiin. Valmis luomaan postauksia."
 - Tämä varmistaa, että kaikki tyyliohjeet ja rajoitteet ovat käytössä
 
-1. **Postausmoodin käyttö (SUOSITELTU)**
-   - Aktivoi postausmoodi: `postausmoodi`
-   - Aloita uusi postaus: `uusi [aihe]`
-   - Claude ohjaa interaktiivisesti pyynnön luomisessa
-   - Tallenna versioita: `sync` (voi tehdä useita kertoja)
-   - Generoi postaus: `käsittele`
-   - Anna palautetta interaktiivisesti: `palaute`
-   - Katso yksityiskohtaiset ohjeet: CLAUDE_POSTAUSMOODI.md
+### Työnkulkuesimerkki (p004-tyylinen)
 
-2. **Kun käyttäjä sanoo "käsittele"**
-   - Lue ylimmän SYNC-osion a-tiedostosta
-   - Generoi postaus b-tiedostoon
-   - Postausmoodissa: valmistaudu automaattisesti palautesesioon
-
-3. **Palautteen käsittely**
-   - Postausmoodissa: Käytä `palaute` komentoa interaktiiviseen palautesesioon
-   - **KRIITTINEN**: Kun käyttäjä antaa palautetta mistä tahansa osasta, sovella sitä globaalisti
-   - Jos käyttäjä korjaa kirjoitusasun (esim. "burkkaa" → "burkaa"), korjaa se kaikkialla
-   - Jos käyttäjä ehdottaa sävyn muutosta yhdessä postauksessa, harkitse koskeeko se muita
-   - Jos käyttäjä mainitsee puuttuvan kontekstin, lisää konteksti KAIKKIIN postauksiin, ei vain kommentoituun
-   - Ajattele aina: "Koskeeko tämä palaute muualle?"
-
-### Työnkulkuesimerkki postausmoodissa
-
-**Vaihe 1: Interaktiivinen pyynnön luominen**
+**Vaihe 1: Käyttäjä luo pyynnön**
 ```
-Käyttäjä: postausmoodi
-Claude: Postausmoodi aktivoitu. Komennot: uusi, käsittele, palaute, sync, status, listaa, poistu
+Käyttäjä: Teen postauksen feminismistä ja burkasta. 
+Pitää paljastaa kaksinaismoralismi.
+Feministit vastustavat länsimaista seksismiä mutta 
+vaikenevat islamista.
 
-Käyttäjä: uusi tuulivoimakritiikki
-Claude: Aloitetaan p002-tuulivoimakritiikki. Mikä on postauksen tavoite?
-Käyttäjä: paljastaa tuulivoimatukien piilotetut kustannukset
-Claude: Hyvä! Millainen tyyli - kriittinen, analyyttinen, populistinen?
-Käyttäjä: analyyttinen, haluan faktoja
-Claude: Selvä. Pituus - lyhyt, keskipitkä vai pitkä?
-Käyttäjä: keskipitkä
-Käyttäjä: sync
-
-[Claude tallentaa SYNC 1 tiedostoon p002-01-a-pyyntö.md]
-
-Käyttäjä: lisää vielä vertailu ydinvoimaan
-Claude: Lisätään vertailu. Muita keskeisiä kohtia?
-Käyttäjä: veronmaksajien taakka, epäluotettavuus
-Käyttäjä: sync
-
-[Claude päivittää SYNC 2 tiedostoon p002-01-a-pyyntö.md]
+[Käyttäjä kirjoittaa p006-01-a-pyyntö.md tiedoston]
 ```
 
-**Vaihe 2: Postauksen generointi**
+**Vaihe 2: Claude generoi postauksen**
 ```
-Käyttäjä: käsittele
-Claude: Generoin postauksen SYNC 2 pohjalta...
-[Claude luo p002-01-b-tuulivoiman-todelliset-kustannukset.md]
+Claude: Luen pyynnön ja luon postauksen joka:
+- Alkaa konkreettisella #metoo-viittauksella
+- Rakentaa kontrastin bikini vs burka
+- Käyttää tunnekielikuvia ("kangaspussi")
+- Päättyy haasteeseen lukijalle
+
+[Claude luo p006-01-b-kaksinaismoralismi.md]
 ```
 
-**Vaihe 3: Interaktiivinen palaute**
+**Vaihe 3: Käyttäjä antaa palautetta**
 ```
-Käyttäjä: palaute
-Claude: Aloitetaan palautesessio. Mikä toimi hyvin?
-Käyttäjä: faktat ja lähteet ovat hyviä
-Claude: Entä parannettavaa?
-Käyttäjä: liian akateeminen sävy
-Claude: Miten muuttaisit sävyä?
-Käyttäjä: lisää emotionaalinen koukku alkuun
-Käyttäjä: sync
+Käyttäjä: Hyvä perus mutta liian pitkä. 
+Tiivistä 40% ja lisää konkreettinen esimerkki 
+suomalaisesta kontekstista.
 
-[Claude tallentaa palautteen p002-02-a-palaute.md]
+[Käyttäjä kirjoittaa p006-02-a-palaute.md]
 ```
 
-**Vaihe 4: Korjatun version generointi**
+**Vaihe 4: Claude tekee korjauksen**
 ```
-Käyttäjä: käsittele
-Claude: Generoin korjatun version palautteen pohjalta...
-[Claude luo p002-02-b-tuulivoiman-piilotetut-kulut.md]
+Claude: Tiivistän tekstin ja lisään esimerkin 
+suomalaisesta koulusta tai työpaikasta.
+
+[Claude luo p006-02-b-kaksinaismoralismi-tiivistetty.md]
 ```
 
 ## Taustatiedot
 
 Tekstin kirjoittamiseen voit käyttää taustatietoja ja muita resursseja:
 - **puolueohjelmat** - sisältää eri poliittisten puolueiden viralliset ohjelmat
-- **kehystys** - sisältää tietoa kehystystekniikoista
-- **resurssit** - sisältää esimerkkejä ja muita materiaaleja
+- **resurssit** - sisältää kaikki viestintämateriaalit järjestettynä alakansioihin:
+  - **resurssit/tyokalut/** - Käytännön työkalut (pyyntopohja-malli.md, fraasit.md, esimerkit.md)
+  - **resurssit/strategiat/** - Viestintästrategiat (narratiivit.md, retoriset-tekniikat.md, kehystys.md)
+  - **resurssit/taustatiedot/** - Tieteelliset ja kontekstuaaliset taustat (arvot.md, puolueet.md, suomalainen_konteksti.md, tekniikat.md)
   - **resurssit/oppaat/** - PDF-muotoisia oppaita viestintätekniikkoihin (esim. kehystysopas-1-1.pdf)
 - **tyyliesimerkit** - sisältää valikoituja esimerkkejä aiemmista postauksista, joita voit käyttää inspiraationa tai viitteenä.
   Esimerkit on valittu niiden arvioidun tehokkuuden perusteella suomalaisessa poliittisessa viestinnässä. Ne on numeroitu 
@@ -308,6 +286,29 @@ Opettaa Claudelle tekstin hienovaraisia vivahteita ja "kulmia":
   - Otsikot sopivilla `#`-tasoilla
   - Asianmukaiset rivinvaihdot osioiden välillä
 - **Git commit -viestit**: Aina englanniksi
+- **Python-koodi**:
+  - Koodin kommentit ja muuttujanimet: **englanniksi** (alan standardi)
+  - Käyttäjälle näytettävä dokumentaatio: **suomeksi**
+  - Esimerkki:
+    ```python
+    # Calculate weighted score based on engagement metrics
+    def calculate_engagement_score(likes, shares, comments):
+        """
+        Laskee postauksen sitoutumispisteet.
+        
+        Parametrit:
+        - likes: tykkäysten määrä
+        - shares: jakojen määrä  
+        - comments: kommenttien määrä
+        """
+        weight_likes = 1.0
+        weight_shares = 2.5  
+        weight_comments = 3.0
+        
+        return (likes * weight_likes + 
+                shares * weight_shares + 
+                comments * weight_comments)
+    ```
 - **TÄRKEÄÄ - Tiedostojärjestelmässä navigointi**:
   - Tarkista AINA ensin nykyinen työhakemisto `pwd`-komennolla ennen tiedostojen luomista tai siirtämistä
   - Käytä absoluuttisia polkuja epäselvissä tilanteissa

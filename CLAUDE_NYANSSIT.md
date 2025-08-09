@@ -57,6 +57,13 @@ nyanssit/
 └── anti-patterns.md         # Vältettävät rakenteet
 ```
 
+## Analyysit postausten toimivuudesta
+
+- **p004-vs-p005-analyysi.md** - Vertailu miksi p004 toimi mutta p005 ei
+  - P004: Konkreettinen, tunteellinen, selkeä
+  - P005: Teoreettinen, abstrakti, sekava
+  - Ydinopetus: Voima tulee konkretiasta ja tunteista, ei käsitteistä
+
 ## Tavoite
 
 Opettaa Claudelle että:
@@ -64,6 +71,7 @@ Opettaa Claudelle että:
 - **Särmät tekevät tekstistä muistettavan**
 - **Inhimillinen teksti ei ole symmetristä**
 - **Tunteet näkyvät rakenteessa**, ei vain sanoissa
+- **Konkretiaa yli teorian** - aina tunnistettavia esimerkkejä
 
 ## Vinkkejä korjaajalle
 

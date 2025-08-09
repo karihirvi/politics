@@ -13,11 +13,24 @@ Thumbs.db
 build/
 dist/
 
-# Python (if needed)
+# Python
 __pycache__/
 *.py[cod]
-.venv/
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
 venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+*.egg-info/
+*.egg
 
 # Documentation Build
 docs/_build/
