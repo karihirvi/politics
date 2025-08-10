@@ -66,10 +66,15 @@ Käyttäjä luo a-tiedoston, joka sisältää:
 - **Raakateksti/ydinviestit** - mitä halutaan sanoa
 - **Konkreettiset esimerkit** - tunnistettavia tilanteita
 
-**SUOSITUS**: Käytä valmista pyyntöpohjaa `resurssit/tyokalut/pyyntopohja-malli.md`
-- Pohja huomioi kaikki CLAUDE_*.md ohjeissa määritellyt elementit
-- Sisältää valintaruudut, kehystämisen, retoriset tekniikat
-- Ohjaa automaattisesti p004-periaatteisiin (konkretiaa, tunnetta)
+**SUOSITUS**: Käytä valmiita pyyntöpohjia:
+1. **Täysi pyyntöpohja** `resurssit/tyokalut/pyyntopohja-malli.md`
+   - Pohja huomioi kaikki CLAUDE_*.md ohjeissa määritellyt elementit
+   - Sisältää valintaruudut, kehystämisen, retoriset tekniikat
+   - Ohjaa automaattisesti p004-periaatteisiin (konkretiaa, tunnetta)
+2. **Muotoilupyyntö** `resurssit/tyokalut/muotoilupyynto-malli.md`
+   - Kun sinulla on valmis raakateksti
+   - Haluaa vain visuaalista muotoilua (otsikot, kappaleet)
+   - Korjaa kirjoitusvirheet, EI muuta sisältöä
 
 Esimerkki (yksinkertainen pyyntö):
 ```markdown
@@ -116,6 +121,16 @@ Claude soveltaa palautetta globaalisti:
 - Jos käyttäjä korjaa kirjoitusasun, korjaa kaikkialla
 - Jos sävy muuttuu, harkitse koskeeko muita kohtia
 - Ajattele: "Koskeeko tämä palaute muualle?"
+
+#### 4. Vaihtoehtoisesti: Muotoilupyynnön käyttö
+
+Jos käyttäjällä on valmis raakateksti, joka tarvitsee vain muotoilua:
+1. Käytä **muotoilupyyntö-mallia** (`resurssit/tyokalut/muotoilupyynto-malli.md`)
+2. Claude EI muuta sisältöä, vain:
+   - Parantaa visuaalista ulkoasua (otsikot, kappaleet, listat)
+   - Korjaa kirjoitusvirheet ja kielioppivirheet
+   - Säilyttää kaikki argumentit ja viitteet
+3. Sopii tilanteisiin, joissa sisältö on valmis mutta kaipaa selkeämpää rakennetta
 
 #### TÄRKEÄÄ: Ennen postausten tekemistä
 
@@ -177,7 +192,7 @@ suomalaisesta koulusta tai työpaikasta.
 Tekstin kirjoittamiseen voit käyttää taustatietoja ja muita resursseja:
 - **puolueohjelmat** - sisältää eri poliittisten puolueiden viralliset ohjelmat
 - **resurssit** - sisältää kaikki viestintämateriaalit järjestettynä alakansioihin:
-  - **resurssit/tyokalut/** - Käytännön työkalut (pyyntopohja-malli.md, fraasit.md, esimerkit.md)
+  - **resurssit/tyokalut/** - Käytännön työkalut (pyyntopohja-malli.md, muotoilupyynto-malli.md, fraasit.md, esimerkit.md)
   - **resurssit/strategiat/** - Viestintästrategiat (narratiivit.md, retoriset-tekniikat.md, kehystys.md)
   - **resurssit/taustatiedot/** - Tieteelliset ja kontekstuaaliset taustat (arvot.md, puolueet.md, suomalainen_konteksti.md, tekniikat.md)
   - **resurssit/oppaat/** - PDF-muotoisia oppaita viestintätekniikkoihin (esim. kehystysopas-1-1.pdf)
