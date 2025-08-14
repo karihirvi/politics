@@ -1,0 +1,15 @@
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(cat:*)",
+      "Bash(sed:*)",
+      "Bash(od:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:yle.fi)"
+    ],
+    "deny": []
+  }
+}
