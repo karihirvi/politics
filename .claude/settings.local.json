@@ -2,13 +2,9 @@
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
-      "Bash(grep:*)",
-      "Bash(rg:*)",
-      "Bash(cat:*)",
-      "Bash(sed:*)",
-      "Bash(od:*)",
-      "Bash(ls:*)",
-      "WebFetch(domain:yle.fi)"
+      "WebFetch(domain:yle.fi)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(pandoc:*)"
     ],
     "deny": []
   }
